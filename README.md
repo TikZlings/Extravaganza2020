@@ -10,4 +10,8 @@ Some ideas for future scenes
   - Vermeer: The Allegory of Painting
   - Leonardo: Annunciation
   - Claude Lorrain: Landscape with St Paula of Rome Embarking at Ostia
+  
+- Travel of Napoleon Coati (Pyramides etc) with ABBA "Waterloo"
+
+
  
