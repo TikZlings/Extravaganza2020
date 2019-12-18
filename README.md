@@ -1,6 +1,6 @@
 # Extravanganza 2020
 
-Some ideas for future scenes
+Some ideas for future scenes (just to make sure I don't forget them again...)
 
 - Sur le pont d'Avignon -> animate image from the Tikzlings Tour de France
 
@@ -12,6 +12,8 @@ Some ideas for future scenes
   - Claude Lorrain: Landscape with St Paula of Rome Embarking at Ostia
   
 - Travel of Napoleon Coati (Pyramides etc) with ABBA "Waterloo"
+
+- Vampire ducks in "Tanz der Vampire"
 
 
  
