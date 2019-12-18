@@ -15,5 +15,7 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 
 - Vampire ducks in "Tanz der Vampire"
 
+- Tikzlings conquering space, maybe the Moon or Mars
+
 
  
