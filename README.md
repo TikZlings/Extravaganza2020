@@ -17,5 +17,7 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 
 - Tikzlings conquering space, maybe the Moon or Mars
 
+- Something with the chess ducks? Which musik?
 
+- Marmot skiing on a marmote ski piste ...
  
