@@ -20,4 +20,7 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 - Something with the chess ducks? Which musik?
 
 - Marmot skiing on a marmote ski piste ...
+
+- tikz bees with honey pot, https://chat.stackoverflow.com/transcript/message/48206670#48206670
+  Music: honey, honey from abba. https://www.youtube.com/watch?v=7j6OI9TxqzI
  
