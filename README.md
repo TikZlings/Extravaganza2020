@@ -24,3 +24,7 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 - tikz bees with honey pot, https://chat.stackoverflow.com/transcript/message/48206670#48206670
   Music: honey, honey from abba. https://www.youtube.com/watch?v=7j6OI9TxqzI
  
+- Wilhelm Tell or Robin Hood: https://chat.stackoverflow.com/transcript/message/48274008#48274008
+
+- Matrix https://chat.stackoverflow.com/transcript/message/48272890#48272890
+ 
