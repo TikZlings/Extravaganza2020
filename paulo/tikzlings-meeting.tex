@@ -8,7 +8,7 @@
 \usepackage{tikzducks,tikzlings}
 \usepackage{fontawesome}
 
-\usetikzlibrary{positioning}
+\usetikzlibrary{positioning,calc}
 
 \setbeamercolor{background canvas}{bg=white!20!black}
 
@@ -17,7 +17,12 @@
 \begin{frame}
 \vspace*{.7ex}
 \begin{tikzpicture}
-\node[draw, fill=black, rectangle, minimum width=2.5cm, minimum height=1.5cm, rounded corners, align=center, text width=2cm] (cam1) {\color{white}\bfseries\small Dürer,\\ the rhino};
+\node[draw, fill=black, rectangle, minimum width=2.5cm, minimum height=1.5cm, rounded corners, align=center, text width=2cm] (cam1) {};
+\begin{scope} 
+  \clip (cam1.south west) rectangle (cam1.north east);
+  \rhino[yshift=-1.5cm]
+  \node at ([yshift=0.1cm]cam1.south) {\color{white}\bfseries\tiny Dürer, the rhino};
+\end{scope}
 \node[draw, fill=white!50!black, rectangle, minimum width=2.5cm, minimum height=1.5cm, rounded corners, right=.2cm of cam1] (cam2) {};
 \node[draw, fill=white!50!black, rectangle, minimum width=2.5cm, minimum height=1.5cm, rounded corners, right=.2cm of cam2] (cam3) {};
 \node[draw, fill=white!50!black, rectangle, minimum width=2.5cm, minimum height=1.5cm, rounded corners, right=.2cm of cam3] (cam4) {};
