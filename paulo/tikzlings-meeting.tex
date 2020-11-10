@@ -12,8 +12,7 @@
 
 \setbeamercolor{background canvas}{bg=white!20!black}
 
-\begin{document}
-
+\newcommand{\scene}[1]{%
 \begin{frame}
 \vspace*{.5ex}
 \begin{tikzpicture}
@@ -100,9 +99,12 @@
 
 \node[draw, fill=white!50!black, rectangle, minimum width=7.9cm, minimum height=5.5cm, rounded corners, below=1cm of cam1.east, xshift=1.45cm] (cam9) {};
 
+
+\node at ([yshift=-1.2cm, xshift=-2cm]cam9.north east) {\includegraphics[scale=.09]{assets/slide#1.jpg}};
+
 \begin{scope} 
   \clip (cam9.south west) rectangle (cam9.north east);
-  \anteater[yshift=-9.1cm, xshift=1.9cm, scale=3.5]
+  \anteater[yshift=-9.1cm, xshift=1.6cm, scale=3.5]
 \end{scope}
 
 \node [draw, rectangle, fill=black, rounded corners=2pt, inner sep=2pt, minimum width=7.7cm] at ([yshift=0cm]cam9.south) {\color{white}\bfseries\tiny Peter, the anteater};
@@ -113,5 +115,12 @@
 \node[draw, fill=white!80!black, circle, minimum width=.66cm, left=.2cm of icon1, inner sep=0pt] (icon2) {\faMicrophoneSlash};
 \node[draw, fill=white!80!black, circle, minimum width=.66cm, right=.2cm of icon1, inner sep=0pt] (icon3) {\faVolumeUp};
 \end{tikzpicture}
-\end{frame}
+\end{frame}}
+
+\begin{document}
+\scene{1}
+\scene{2}
+\scene{3}
+\scene{4}
+\scene{5}
 \end{document}
