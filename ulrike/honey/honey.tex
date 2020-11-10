@@ -5,12 +5,27 @@
 \documentclass{beamer}
 \usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
 \setbeamertemplate{navigation symbols}{}
-\usepackage{tikzducks,tikzlings}
+\usepackage{tikzducks,tikzlings,bearwear}
+\usetikzlibrary{calc}
 \begin{document}
 
 \begin{frame}
-\begin{tikzpicture}
-\duck
+\begin{tikzpicture}[remember picture,overlay]
+	
+% Background image
+\node[at=(current page.center)]{%
+	%%% later
+};	
+% Image credit of background
+
+\foreach \X [evaluate=\X as \Y using {sin(\X)}]in %{0,1}
+{0,10,...,3500}
+{
+  \only<+>{%
+    \begin{scope}[scale=2,shift={($(current page.south)+(1,1+0.5*\Y)$)}]
+    \bear;
+    \end{scope}
+}} 
 \end{tikzpicture}
 \end{frame}
 \end{document}
