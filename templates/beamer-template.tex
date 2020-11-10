@@ -1,0 +1,16 @@
+% !Mode:: "TeX:UTF-8:Main"
+% gif command (hope it still works ...)
+% magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
+
+\documentclass{beamer}
+\usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
+\setbeamertemplate{navigation symbols}{}
+\usepackage{tikzducks,tikzlings}
+\begin{document}
+
+\begin{frame}
+\begin{tikzpicture}
+\duck
+\end{tikzpicture}
+\end{frame}
+\end{document}
