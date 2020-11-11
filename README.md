@@ -1,5 +1,40 @@
 # Extravanganza 2020
 
+# Done
+
+
+# Work in Progress
+
+## Honey
+
+- Topic:
+
+- Music:
+
+- Source code: [./ulrike/honey/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/honey)
+
+## Zoom Meeting
+
+- Topic:
+
+- Music:
+
+- Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
+
+## A night in venice
+
+<img align="right" src="./storyboard/previews/venice.png" height="100">
+
+- Topic: TikZlings in a Gondola 
+
+- Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32
+
+- Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
+
+
+# More Ideas
+
+
 Some ideas for future scenes (just to make sure I don't forget them again...)
 
 - Sur le pont d'Avignon -> animate image from the Tikzlings Tour de France
