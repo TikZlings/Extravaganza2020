@@ -1,3 +1,4 @@
+% !TeX TS-program = pdflatex
 \documentclass{beamer}
 
 \usepackage{tikz}
@@ -13,7 +14,7 @@
 \begin{frame}
   \begin{tikzpicture}[remember picture, overlay]
     \begin{scope}[
-%      xshift=300-700*\thepage/20
+      xshift=(3-6.5*\thepage/500)*100
     ]
       \begin{scope}[yshift=-2.7cm, xshift=7.5cm]
         \duck[
@@ -42,7 +43,7 @@
     \end{scope}
     \node at ([yshift=0.2cm]current page.south) {\color{white}\tiny Background image: \url{https://commons.wikimedia.org/wiki/File:Rialto_Bridge_Grand_Canal_Venice_Italy_(104466307).jpeg}};
   \end{tikzpicture}
-%	\pause[20]
+	\pause[500]
 \end{frame}	
 
 \end{document}

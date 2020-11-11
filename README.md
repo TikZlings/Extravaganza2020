@@ -27,7 +27,7 @@
 
 - Topic: TikZlings in a Gondola 
 
-- Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32
+- Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32 https://www.youtube.com/watch?v=KEiZ-J97O5A
 
 - Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
 
