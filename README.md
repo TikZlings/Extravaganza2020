@@ -2,6 +2,15 @@
 
 # Done
 
+## A night in venice
+
+<img align="right" src="./storyboard/previews/venice.png" height="100">
+
+- Topic: TikZlings in a Gondola 
+
+- Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32 https://www.youtube.com/watch?v=KEiZ-J97O5A
+
+- Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
 
 # Work in Progress
 
@@ -20,17 +29,6 @@
 - Music:
 
 - Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
-
-## A night in venice
-
-<img align="right" src="./storyboard/previews/venice.png" height="100">
-
-- Topic: TikZlings in a Gondola 
-
-- Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32 https://www.youtube.com/watch?v=KEiZ-J97O5A
-
-- Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
-
 
 # More Ideas
 
