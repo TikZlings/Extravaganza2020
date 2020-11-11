@@ -13,7 +13,7 @@
 \begin{frame}
   \begin{tikzpicture}[remember picture, overlay]
     \begin{scope}[
-      xshift=300-700*\thepage/20
+%      xshift=300-700*\thepage/20
     ]
       \begin{scope}[yshift=-2.7cm, xshift=7.5cm]
         \duck[
@@ -30,6 +30,10 @@
         \fill[red!70!gray!80!gray,rotate=-15] (0.07,2.15) rectangle (0.81,2.25);
         \fill[white!80!gray,rotate=-15] (0.44,2.25) ellipse[x radius=0.37, y radius=0.08];
         %
+        % passangers
+        \node at (-2.5,0.8) {\includegraphics[scale=0.8]{ernest}};
+        \node at (-1.4,0.7) {\includegraphics[scale=1.2]{Miss_Marmot}};
+        %
         \node at (-1.5,0) {\includegraphics[width=9cm]{gondola}};
         %
         % boat oars
@@ -38,7 +42,7 @@
     \end{scope}
     \node at ([yshift=0.2cm]current page.south) {\color{white}\tiny Background image: \url{https://commons.wikimedia.org/wiki/File:Rialto_Bridge_Grand_Canal_Venice_Italy_(104466307).jpeg}};
   \end{tikzpicture}
-	\pause[20]
+%	\pause[20]
 \end{frame}	
 
 \end{document}

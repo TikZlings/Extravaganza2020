@@ -35,6 +35,9 @@ honey.pdf
 *.snm
 *.nav
 !storyboard/*.pdf
+!storyboard/previews/*.png
+!samcarter/*/*.pdf
+!samcarter/*/*.svg
 *.prj
 *.prj.bak
 hippos.gif
