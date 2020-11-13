@@ -116,14 +116,6 @@ Music: Abba Honey, honey https://youtu.be/V0hCIjKV_Qg 0:08 - 0:20
 
 example honey pot: https://image.brigitte.de/10866348/uncropped-0-0/2fbe6c87c4782c2a7fa0d170495f783b/Zy/honig-diaet.jpg
 
-### A night in venice
-
-two ducks and a mole in a gondola
-
-Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32
-
-Background: venice by night
-
 ### Two bees 
 
 Dark stage, large bee in spotlight in the middle. A second bee
