@@ -1,0 +1,11 @@
+{
+  "projectPath": "D:/OneDrive/Documents/GitHub/Extravaganza2020",
+  "title": "LaTeX-Plus Project",
+  "root": "paulo\zoom-meeting\tikzlings-meeting.tex",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}
