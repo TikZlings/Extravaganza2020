@@ -2,12 +2,66 @@
 % gif command (hope it still works ...)
 % magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
 
-\documentclass{beamer}
-\usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
-\setbeamertemplate{navigation symbols}{}
-\usepackage{tikzducks,tikzlings,bearwear}
-\usetikzlibrary{calc}
+\documentclass{article}
+\ExplSyntaxOn
+
+\cs_if_exist:NTF \tex_expanded:D
+  {
+    \cs_new:Npn \prop_to_keyval_list:N #1
+      {
+        \__kernel_exp_not:w
+          \prop_if_empty:NTF #1
+            { {} }
+            {
+              \if_false: { \fi:
+                \exp_after:wN \__prop_to_keyval_list_aux:w
+                \tex_expanded:D
+                  { \prop_map_function:NN #1 \__prop_to_keyval_list_aux:nn }
+              }
+            }
+      }
+    \cs_new:Npn \__prop_to_keyval_list_aux:w ,
+      { \exp_after:wN { \if_false: } \fi: }
+    \cs_new:Npn \__prop_to_keyval_list_aux:nn #1#2
+      { , \exp_not:n { #1 =~ {#2} } }
+  }
+  {
+    \cs_new:Npn \prop_to_keyval_list:N #1
+      {
+        \__kernel_exp_not:w
+          \prop_if_empty:NTF #1
+            { {} }
+            {
+              \if_false: { \fi:
+                \prop_map_function:NN #1 \__prop_to_keyval_list_aux:nnw
+                \__prop_to_keyval_list_aux:w
+                \s__prop_mark
+              }
+            }
+      }
+    \cs_new:Npn \__prop_to_keyval_list_aux:nnw #1#2#3 \s__prop_mark
+      { #3 \s__prop_mark , #1 =~ {#2} }
+    \cs_new:Npn \__prop_to_keyval_list_aux:w \s__prop_mark ,
+      { \exp_after:wN { \if_false: } \fi: }
+  }
+
+\prop_set_from_keyval:Nn \l_tmpa_prop
+  {
+    a = b,
+    b = c,
+    c = {dddddddddddddddddddddd,dddddddd=dddddddddddddddddddddddddddddd}
+  }
+\prop_put:Nnn\l_tmpa_prop {d}{eeee,gff=xxxx}  
+% two steps of expansion
+\exp_args:NNo \tl_set:No \l_tmpa_tl { \prop_to_keyval_list:N \l_tmpa_prop }
+% x-type expansion
+\tl_show:N\l_tmpa_tl
+\tl_set:Nx \l_tmpa_tl { \prop_to_keyval_list:N \l_tmpa_prop }
+
+\ExplSyntaxOff
 \begin{document}
+blub
+\end{document}
 
 \begin{frame}
 \begin{tikzpicture}[remember picture,overlay]
@@ -19,13 +73,13 @@
 % Image credit of background
 
 \foreach \X [evaluate=\X as \Y using {sin(\X)}]in %{0,1}
-{0,10,...,3500}
+{0,50,...,3500}
 {
   \only<+>{%
-    \begin{scope}[scale=2,shift={($(current page.south)+(1,1+0.5*\Y)$)}]
+    \begin{scope}[scale=2,shift={($(current page.south)+(1,1+0.8*\Y)$)}]
     \bear;
     \end{scope}
-}} 
+}}
 \end{tikzpicture}
 \end{frame}
 \end{document}
