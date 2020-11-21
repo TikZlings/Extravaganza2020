@@ -14,6 +14,8 @@
 
 ## Bär necessity 
 
+<img align="right" src="./storyboard/previews/honey.png" height="100">
+
 - Topic: honey pot + jumping Bär with spoon
 
 - Music: Abba Honey, honey 0:08 - 0:20 https://youtu.be/V0hCIjKV_Qg 
