@@ -16,7 +16,7 @@
 
 - Topic: honey pot + jumping Bär with spoon
 
-- Music: Abba Honey, honey https://youtu.be/V0hCIjKV_Qg 0:08 - 0:20
+- Music: Abba Honey, honey 0:08 - 0:20 https://youtu.be/V0hCIjKV_Qg 
 
 - Source code: [./ulrike/honey/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/honey)
 
