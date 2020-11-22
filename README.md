@@ -22,16 +22,17 @@
 
 - Source code: [./ulrike/honey/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/honey)
 
-
-# Work in Progress
-
 ## Zoom Meeting
 
-- Topic:
+<img align="right" src="./storyboard/previews/tikzlings-meeting.png" height="100">
 
-- Music:
+- Topic: TikZlings in a Zoom meeting window, with the anteater bloke presenting the _theory of the sheep_
+
+- Music: https://www.youtube.com/watch?v=_m47nceKkx4 (previous soundtrack was removed by YT)
 
 - Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
+
+# Work in Progress
 
 ## TikZArt
 
