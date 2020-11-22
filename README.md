@@ -12,23 +12,36 @@
 
 - Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
 
-# Work in Progress
+## Bär necessity 
 
-## Honey
+<img align="right" src="./storyboard/previews/honey.png" height="100">
 
-- Topic:
+- Topic: honey pot + jumping Bär with spoon
 
-- Music:
+- Music: Abba Honey, honey 0:08 - 0:20 https://youtu.be/V0hCIjKV_Qg 
 
 - Source code: [./ulrike/honey/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/honey)
 
 ## Zoom Meeting
 
-- Topic:
+<img align="right" src="./storyboard/previews/tikzlings-meeting.png" height="100">
 
-- Music:
+- Topic: TikZlings in a Zoom meeting window, with the anteater bloke presenting the _theory of the sheep_
+
+- Music: https://www.youtube.com/watch?v=_m47nceKkx4 (previous soundtrack was removed by YT)
 
 - Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
+
+# Work in Progress
+
+## TikZArt
+
+- Topic: TikZling visiting a museum
+
+- Music: 
+
+- Source code: [./samcarter/art/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/art)
+
 
 # More Ideas
 
@@ -108,13 +121,6 @@ Music Uriah Heep Lady in black https://youtu.be/N0H48bpJziQ 0.00-0:27
 
 Background https://i.insider.com/5a20871af914c354018b7289?width=2400
 
-### Bär necessity 
-
-honey pot + jumping Bär with spoon
-
-Music: Abba Honey, honey https://youtu.be/V0hCIjKV_Qg 0:08 - 0:20
-
-example honey pot: https://image.brigitte.de/10866348/uncropped-0-0/2fbe6c87c4782c2a7fa0d170495f783b/Zy/honig-diaet.jpg
 
 ### Two bees 
 
