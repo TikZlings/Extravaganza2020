@@ -1,0 +1,27 @@
+% !Mode:: "TeX:DE:UTF-8:Main
+\documentclass{article}
+\usepackage{sheep,tikzlings,tikzducks}
+\usetikzlibrary{svg.path}
+\begin{document}
+\begin{tikzpicture}
+\sheep
+\node[rotate=-5] at(0.9mm,2.4cm) {\includegraphics[width=1.4cm]{bobble}};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\marmot
+\node[rotate=-5] at(0.5mm,2.25cm) {\includegraphics[width=1.2cm]{bobble}};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\marmot
+\node[rotate=-5] at(0.5mm,2.3cm) {\includegraphics[width=1cm]{bobble}};
+\end{tikzpicture}
+
+
+\tikz\sheep[santa=red];
+
+\tikz\marmot[santa=blue];
+
+%\tikz{\marmot;\begin{scope}[xshift=-0.7cm,yshift=1mm]\duck[rotate=15,invisible,viking=gray];\end{scope}}
+\end{document}
