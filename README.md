@@ -53,6 +53,14 @@
 
 - Source Code: [./paulo/hug-the-world/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/hug-the-world)
 
+## Dance of the Vampires
+
+- Topic: vampires
+
+- Music: https://www.youtube.com/watch?v=qrVTNmimDp0
+
+- Source Code: [./samcarter/vampires/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/vampires)
+
 # More Ideas
 
 
@@ -66,8 +74,6 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
   - Claude Lorrain: Landscape with St Paula of Rome Embarking at Ostia
   
 - Travel of Napoleon Coati (Pyramides etc) with ABBA "Waterloo"
-
-- Vampire ducks in "Tanz der Vampire"
 
 - Tikzlings conquering space, maybe the Moon or Mars
 
