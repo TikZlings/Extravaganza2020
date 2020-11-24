@@ -1,17 +1,42 @@
-% !Mode:: "TeX:DE:UTF-8:Main
-\documentclass{article}
-\usepackage{sheep,tikzlings,tikzducks}
+% !Mode:: "TeX:UTF-8:Main"
+% gif command (hope it still works ...)
+% magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
+\PassOptionsToPackage{svgnames,x11names}{xcolor}
+\documentclass{beamer}
+\usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
+\setbeamertemplate{navigation symbols}{}
+\usepackage{sheep,tikzducks,tikzlings,bearwear}
+\usetikzlibrary{calc}
+\usepackage{bearwear,eso-pic}
 \usepackage{xkcdcolors}
+\usepackage{xfp}
+\usetikzlibrary{shapes.geometric}
+\tikzstyle{witchstars}=[star, star points=5, star point ratio=2.25, draw,inner sep=1.3pt,anchor=outer point 3]
 
+\makeatletter
+
+\newcommand{\mystar}{%
+    \pgfmathsetmacro\xposition{12.4*rnd}
+    \pgfmathsetmacro\yposition{4.5*rnd+4.5}
+    \pgfmathsetmacro\starsize{1.8+1.5*rnd}
+    \pgfmathsetmacro\starcolor{random(10,75)}
+    \ifodd\c@page
+    \node[witchstars,fill=yellow!\starcolor!white,inner sep=\starsize pt] at (\xposition,\yposition) {};
+    \else
+    \node[witchstars,fill=white!\starcolor!yellow,inner sep=\starsize pt] at (\xposition,\yposition) {};
+    \fi
+    }
+\makeatother
 \newcommand\bobblehat[2]{%
   \begin{scope}[shift={(-0.68,3)},scale=0.006,yscale=-1]
-\path[fill=#1] (47.9231,182.0769) -- (45.0000,179.1539) -- (45.0000,162.5000)
+\begin{scope}[yshift=-100]
+  \path[fill=#1] (47.9231,182.0769) -- (45.0000,179.1539) -- (45.0000,162.5000)
   -- (45.0000,145.8461) -- (47.9453,142.9008) -- (50.8907,139.9555) --
   (112.9180,140.2277) -- (174.9453,140.5000) -- (177.2227,142.7751) .. controls
   (179.3851,144.9355) and (179.5159,145.9071) .. (179.8160,162.0361) --
   (180.1320,179.0219) -- (177.1429,182.0109) -- (174.1539,185.0000) --
   (112.5000,185.0000) -- (50.8462,185.0000) -- cycle;
-
+\end{scope}  
 \path[fill=#2]  (56.5667,132.7500) ..
   controls (59.5944,107.7429) and (75.2960,83.7816) .. (94.5000,74.8622) ..
   controls (97.2500,73.5849) and (99.6847,72.4212) .. (99.9105,72.2761) ..
@@ -37,27 +62,74 @@
   (123.9741,71.8415) -- (129.6984,74.4622) .. controls (149.5630,83.5565) and
   (165.3543,107.3191) .. (168.4332,132.7500) -- (169.0689,138.0000) --
   (112.5000,138.0000) -- (55.9311,138.0000) -- (56.5667,132.7500) -- cycle;
+  
 \end{scope}}
-
+\AddToShipoutPictureBG{%
+ \AtPageLowerLeft{%
+ \begin{tikzpicture}[overlay,remember picture]
+ \fill[DeepSkyBlue4] (0,0) rectangle (\paperwidth,\paperheight);
+ \pgfmathsetseed{2}
+ \foreach \x in {1,2,...,50}{\mystar}
+ %\fill[white] (0,0) rectangle (\paperwidth,3.5cm);
+ \fill[top color=white,bottom color=LightCyan3] plot[smooth,variable=\x,domain=-1:12.8,samples=82] ({\x},{3.8+0.3*sin(30*(\x-0.5*1/10))})--(12.8,0)--(0,0)--(-1,0);
+ \begin{scope}[xshift=4.5cm,yshift=2cm]
+ \begin{scope}[scale=1]
+ \filldraw[DarkGoldenrod4!50!black] (-.5,-.5) rectangle ++(1,1.5);
+	\shade[top color=white,bottom color=Green4!50!black] (0,1)
+	to[bend right] ++(4,0)
+	to[bend left] ++(-3,2)
+	to[bend right] ++(2,0)
+	to[bend left] ++(-2.5,2)
+	to[bend right] ++(1,0)
+	to[bend left] ++(-1.5,2)
+	-- cycle;
+	\shade[top color=white,bottom color=Green4!50!black] (0,1)
+	to[bend left] ++(-4,0)
+	to[bend right] ++(3,2)
+	to[bend left] ++(-2,0)
+	to[bend right] ++(2.5,2)
+	to[bend left] ++(-1,0)
+	to[bend right] ++(1.5,2)
+	-- cycle;
+	\draw[white,thick] (0,1)
+	to[bend right] ++(4,0)
+	to[bend left] ++(-3,2)
+	to[bend right] ++(2,0)
+	to[bend left] ++(-2.5,2)
+	to[bend right] ++(1,0)
+	to[bend left] ++(-1.5,2);
+	%-- cycle;
+  	\draw[white,thick] (0,1)
+	to[bend left] ++(-4,0)
+	to[bend right] ++(3,2)
+	to[bend left] ++(-2,0)
+	to[bend right] ++(2.5,2)
+	to[bend left] ++(-1,0)
+	to[bend right] ++(1.5,2);
+	
+\end{scope}
+\end{scope}
+ \end{tikzpicture}}}
+\setbeamertemplate{background}{}
+\setbeamertemplate{background canvas}{}
 \begin{document}
+
+\begin{frame}
 
 \begin{tikzpicture}
 \marmot;
 \bobblehat{xkcdMauve}{xkcdBrickRed}
 \end{tikzpicture}
-
 \begin{tikzpicture}
 \sheep;
 \bobblehat{xkcdMauve}{xkcdBrickRed}
 \end{tikzpicture}
-
 \begin{tikzpicture}
 \bear;
 \begin{scope}%[scale=1.3,yshift=-4.2mm]
 \bobblehat{xkcdCloudyBlue}{xkcdDullBlue}
 \end{scope}
 \end{tikzpicture}
-
 \begin{tikzpicture}
 \hippo;
 \bobblehat{xkcdMauve}{xkcdBrickRed}
@@ -69,42 +141,5 @@
 \end{tikzpicture}
 
 
+\end{frame}
 \end{document}
-
-
-\begin{tikzpicture}
-\sheep
-\node[rotate=-5] at(0.9mm,2.4cm) {\includegraphics[width=1.4cm]{bobble}};
-\end{tikzpicture}
-
-\begin{tikzpicture}
-\bear
-\node[rotate=-5] at(0.9mm,2.4cm) {\includegraphics[width=1.4cm]{bobble}};
-\end{tikzpicture}
-
-\begin{tikzpicture}
-\hippo
-\node[rotate=-5] at(0.9mm,2.4cm) {\includegraphics[width=1.4cm]{bobble}};
-\end{tikzpicture}
-
-\begin{tikzpicture}
-\rhino
-\node[rotate=-5] at(0.9mm,2.4cm) {\includegraphics[width=1.4cm]{bobble}};
-\end{tikzpicture}
-\begin{tikzpicture}
-\marmot
-\node[rotate=-5] at(0.5mm,2.25cm) {\includegraphics[width=1.2cm]{bobble}};
-\end{tikzpicture}
-
-\begin{tikzpicture}
-\marmot
-\node[rotate=-5] at(0.5mm,2.3cm) {\includegraphics[width=1cm]{bobble}};
-\end{tikzpicture}
-
-
-\tikz\sheep[santa=red];
-
-\tikz\marmot[santa=blue];
-
-%\tikz{\marmot;\begin{scope}[xshift=-0.7cm,yshift=1mm]\duck[rotate=15,invisible,viking=gray];\end{scope}}
-\end{document} 
