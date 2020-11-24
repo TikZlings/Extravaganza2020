@@ -2,7 +2,7 @@
 rm honey.mp4
 
 # convert to png images
-convert -density 160 honey.pdf honey.png
+convert -density 240 honey.pdf honey.png
 
 # convert to video
 ffmpeg -ss 00:00:00 -i honey-%d.png -ss 00:00:05 -i ABBA.m4a -shortest honey_raw.mp4

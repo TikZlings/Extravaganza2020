@@ -1,0 +1,248 @@
+% !Mode:: "TeX:UTF-8:Main"
+% gif command (hope it still works ...)
+% magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
+
+\documentclass{beamer}
+
+\usepackage{fontspec}
+\newfontfamily\notoemoji{Noto Color Emoji}[Renderer=HarfBuzz]
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{graphicx}
+
+\usepackage{tikzducks,tikzlings}
+\usetikzlibrary{positioning,calc}
+
+\begin{document}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01fa91}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck
+\bear[scale=0.7,xshift=1.3cm,back]
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.6,0.6) {\includegraphics[scale=.4]{assets/david.png}};
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-5,yscale=-5]
+\duck
+\node at (0.6,0.6) {\rotatebox{180}{\includegraphics[scale=1]{assets/david.png}}};
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0,0) {\includegraphics{assets/moose.png}};
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck[speech={maybe not\ldots}]
+\node at (0,0) {\includegraphics{assets/moose.png}};
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\hspace{-5cm}\begin{tikzpicture}[xscale=-7,yscale=7]
+\duck
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{6}{\notoemoji ^^^^2601}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck
+\node at (0.85,0.6) {{\scalebox{5.6}{\notoemoji ^^^^^^01f315}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.9,0.6) {{\scalebox{8}{\notoemoji ^^^^^^01f388}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck[yshift=-1.2cm, xshift=-1cm];
+\node at (0, -1.5) {\includegraphics[scale=.3]{assets/pillow.png}};
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.9,0.7) {{\scalebox{8}{\notoemoji ^^^^^^01f332}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck
+\node at (0.9,0.7) {{\scalebox{8}{\notoemoji ^^^^^^01f335}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-3,yscale=-3]
+\duck[speech={\Huge ouch!}]
+\node at (0.9,0.7) {{\rotatebox{180}{\scalebox{12}{\notoemoji ^^^^^^01f335}}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f493}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{frame}
+
+\end{document}
