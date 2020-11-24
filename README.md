@@ -32,15 +32,19 @@
 
 - Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
 
-# Work in Progress
-
 ## TikZArt
 
-- Topic: TikZling visiting a museum
+<img align="right" src="./storyboard/previews/art.png" height="100">
 
-- Music: 
+- Topic: TikZling visits a museum
+
+- Music: https://www.youtube.com/watch?v=uJ2e7jSutrA (better suggestions are welcome - I'm really not the music expert....)
 
 - Source code: [./samcarter/art/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/art)
+
+
+# Work in Progress
+
 
 
 # More Ideas
