@@ -12,7 +12,7 @@
 \ExplSyntaxOff
 
 \newcommand{\tourist}{%
-\ifnum \intmodnn{\thepage}{10} > 5
+\ifnum \intmodnn{\thepage}{20} > 10
 	\marmot[
 		rightstep,
 		scale=1.6, 
@@ -51,15 +51,15 @@
 
 \begin{frame}
 \begin{tikzpicture}[remember picture, overlay]
-\node at (30-0.15*\thepage,0.4) {\includegraphics[height=5cm]{vermeer}};
-\node at (30-0.15*\thepage,-0.4) {\includegraphics[height=\paperheight]{rail}};
-\node at (50-0.15*\thepage,0.4) {\includegraphics[height=5cm]{monet}};
-\node at (60-0.15*\thepage,-0.4) {\includegraphics[height=\paperheight]{sofa}};
-\node at (70-0.15*\thepage,0.4) {\includegraphics[height=5cm]{mondrian}};
-\node at (90-0.15*\thepage,0.4) {\includegraphics[height=5cm]{hopper}};
+\node at (30-0.1*\thepage,0.4) {\includegraphics[height=5cm]{vermeer}};
+\node at (30-0.1*\thepage,-0.4) {\includegraphics[height=\paperheight]{rail}};
+\node at (50-0.1*\thepage,0.4) {\includegraphics[height=5cm]{monet}};
+\node at (60-0.1*\thepage,-0.4) {\includegraphics[height=\paperheight]{sofa}};
+\node at (70-0.1*\thepage,0.4) {\includegraphics[height=5cm]{mondrian}};
+\node at (90-0.1*\thepage,0.4) {\includegraphics[height=5cm]{hopper}};
 \tourist
 \end{tikzpicture}
-\pause[650]
+\pause[1000]
 \end{frame}
 	
 \end{document}
