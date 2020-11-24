@@ -2,7 +2,7 @@
 rm art.mp4
 
 # convert to png images
-convert -density 160 art.pdf art.png
+convert -density 240 art.pdf art.png
 
 # convert to video
 ffmpeg -ss 00:00:00 -i art-%d.png -ss 00:00:00 -i VermeerandMusic.m4a -shortest art_raw.mp4
