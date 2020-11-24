@@ -45,7 +45,13 @@
 
 # Work in Progress
 
+## Hug the world 
 
+- Topic: Ducks hugging all sort things/beings
+
+- Music: https://www.youtube.com/watch?v=IUOVqNY64To
+
+- Source Code: [./paulo/hug-the-world/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/hug-the-world)
 
 # More Ideas
 
@@ -77,14 +83,6 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 - Matrix https://chat.stackoverflow.com/transcript/message/48272890#48272890
  
 - Fashion show with the newest bearwear collection
-
-## Ideas Ulrike
-
-### Hug the world 
-
-Ducks hugging all sort things/beings
-
-Music: https://www.youtube.com/watch?v=IUOVqNY64To
 
 ## Ideas Gert Fischer
 
