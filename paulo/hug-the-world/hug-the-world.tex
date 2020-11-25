@@ -1,7 +1,3 @@
-% !Mode:: "TeX:UTF-8:Main"
-% gif command (hope it still works ...)
-% magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
-
 \documentclass{beamer}
 
 \usepackage{fontspec}
@@ -12,11 +8,16 @@
 \usepackage{graphicx}
 
 \usepackage{tikzducks,tikzlings}
-\usetikzlibrary{positioning,calc}
+\usetikzlibrary{fpu}
+
+\NewDocumentEnvironment{scene}{m+b}{\pgfmathparse{ceil(25 * #1)}%
+\foreach\x in {1,..., \pgfmathresult}{\begin{frame}
+#2
+\end{frame}}}{}{}
 
 \begin{document}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -26,9 +27,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1}
 
 \centering
 
@@ -38,9 +39,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{2}
 
 \centering
 
@@ -49,9 +50,9 @@
 \node at (0.6,0.6) {\includegraphics[scale=.4]{assets/david.png}};
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -60,9 +61,9 @@
 \node at (0.6,0.6) {\rotatebox{180}{\includegraphics[scale=1]{assets/david.png}}};
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -70,9 +71,9 @@
 \duck
 \node at (0,0) {\includegraphics{assets/moose.png}};
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -80,18 +81,18 @@
 \duck[speech={maybe not\ldots}]
 \node at (0,0) {\includegraphics{assets/moose.png}};
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{2.7}
 
 \centering
 
 \hspace{-5cm}\begin{tikzpicture}[xscale=-7,yscale=7]
 \duck
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -101,9 +102,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.4}
 
 \centering
 
@@ -113,9 +114,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{2.6}
 
 \centering
 
@@ -125,9 +126,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{2.5}
 
 \centering
 
@@ -135,9 +136,9 @@
 \duck[yshift=-1.2cm, xshift=-1cm];
 \node at (0, -1.5) {\includegraphics[scale=.3]{assets/pillow.png}};
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{2}
 
 \centering
 
@@ -147,9 +148,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{2}
 
 \centering
 
@@ -159,9 +160,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{2}
 
 \centering
 
@@ -171,9 +172,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -183,9 +184,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -195,9 +196,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -207,9 +208,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.5}
 
 \centering
 
@@ -219,9 +220,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.4}
 
 \centering
 
@@ -231,9 +232,9 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
 
-\begin{frame}
+\begin{scene}{1.4}
 
 \centering
 
@@ -243,6 +244,42 @@
 \duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
 \duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
 \end{tikzpicture}
-\end{frame}
+\end{scene}
+
+\begin{scene}{1.4}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{scene}
+
+\begin{scene}{1.4}
+
+\centering
+
+\begin{tikzpicture}[xscale=-2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{scene}
+
+\begin{scene}{1.4}
+
+\centering
+
+\begin{tikzpicture}[xscale=2,yscale=2]
+\duck
+\node at (0.8,0.6) {{\scalebox{4.5}{\notoemoji ^^^^^^01f30d}}};
+\duck[invisible,wing,yscale=-1,scale=0.8,yshift=-1.7cm,xshift=-0.2cm]
+\duck[invisible,wing,yscale=-1,xscale=-1,scale=0.8,yshift=-1.3cm,xshift=-2.5cm]
+\end{tikzpicture}
+\end{scene}
 
 \end{document}

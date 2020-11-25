@@ -42,16 +42,17 @@
 
 - Source code: [./samcarter/art/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/art)
 
-
-# Work in Progress
-
 ## Hug the world 
+
+<img align="right" src="./storyboard/previews/hug-the-world.png" height="100">
 
 - Topic: Ducks hugging all sort things/beings
 
 - Music: https://www.youtube.com/watch?v=IUOVqNY64To
 
 - Source Code: [./paulo/hug-the-world/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/hug-the-world)
+
+# Work in Progress
 
 ## Dance of the Vampires
 
