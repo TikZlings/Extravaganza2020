@@ -2,6 +2,11 @@
 % gif command (hope it still works ...)
 % magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
 
+% delay 35 => 100/35 FPS 
+% Needed: 25 FPS
+% => increase number of pages by 25/(100/35) = 8.75
+% => decrease tikz stepsize to 50/8.75 = 5.714
+
 \documentclass{beamer}
 \usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
 \setbeamertemplate{navigation symbols}{}
@@ -21,7 +26,7 @@
 % Image credit of background
 
 \foreach \X [evaluate=\X as \Y using {sin(\X)}]in %{0,1}
-{0,5,...,3500}
+{0,5.714,...,4000}
 {
   \only<+>{%
     \begin{scope}[scale=2,shift={($(current page.south)+(1,1+0.8*\Y)$)}]
