@@ -62,9 +62,25 @@
 
 - Source Code: [./samcarter/vampires/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/vampires)
 
+## Christmas outing
+
+<img align="right" src="./storyboard/previews/bobble.png" height="100">
+
+- Topic: TikZlings with bobble hats, one large, 6 smaller
+
+- Music: https://youtu.be/12gsCREkIn0  Tannenbaum 0:55 - 1:15
+
+- Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
+
 # Work in Progress
 
+## Amazing ducks
 
+- Topic: ducks with bagpipes in loch ness landscape
+
+- Music: amazing grace https://youtu.be/M8AeV8Jbx6M 0:58-1:23
+
+- Source Code: [./samcarter/lochness/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/lochness)
 
 # More Ideas
 
@@ -98,23 +114,6 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 ## Ideas Gert Fischer
 
 (see also scan for setup)
-
-### Christmas outing
-
-Marmots with bobble hats, one large, 6 smaller
-
-Music: https://youtu.be/12gsCREkIn0  Tannenbaum 0:55 - 1:15
-
-Example background:
-https://get.pxhere.com/photo/tree-branch-snow-winter-autumn-weather-fir-christmas-tree-season-christmas-decoration-2012-spruce-october-freezing-coldsnap-woody-plant-allgau-1142483.jpg?__cf_chl_jschl_tk__=8c21003a99745441177842ee810b198759dbf238-1604862036-0-AZnQLJOQsOaNlp1UdpMkLMsblUTm0XRlZpIZeH0s0dq7u4ZTtXSAVBhzWvfJQzSh0wS8_wUuwv2WmnLedAUx6oXOSNZCyOpSZueR0XDaN67EQaCrZrVrtGbSD1V_iR5of0MNdcmyASk-QMI9IocDv_d7ml2eqNp3iw9vHFk6E9MNxOZAg2X_bVTuqtJSUw8m5DlkE3RWaJp3dK6qZ141T9J8OCofU_wp9K1-tIl2T7JMdq351JLNY27749BbdO4kWRu21AeRSYFQVpb-0h0B7qCfXicdgyf7ZciYQ9Yt8PyFhyNB1X0-gHsHnlChjMqsCshHpc8AoADurBkgU6V_e47Q0lZnk96nJTjlZj1_qwRzYIPCURK_SS0q4s2PYC9kEIuW7iOokI8EyAG5q_orJKk2GbI8RsGZ1U31LLz9hzrj4mL8jaAIVU9uGa0AKA74HqUuFCqUri0diUGbIBjcsMaWuCylelSGHXPS-yalvpQD
-
-### Amazing ducks
-
-ducks with bagpipes in loch ness landscape
-
-Music: amazing grace https://youtu.be/M8AeV8Jbx6M 0:58-1:23
-
-Example background https://www.historic-uk.com/wp-content/uploads/2017/04/loch-ness-monster.jpg
 
 ### Down under
 
