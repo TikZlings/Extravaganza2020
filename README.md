@@ -52,15 +52,19 @@
 
 - Source Code: [./paulo/hug-the-world/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/hug-the-world)
 
-# Work in Progress
-
 ## Dance of the Vampires
+
+<img align="right" src="./storyboard/previews/vampires.png" height="100">
 
 - Topic: vampires
 
 - Music: https://www.youtube.com/watch?v=qrVTNmimDp0
 
 - Source Code: [./samcarter/vampires/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/vampires)
+
+# Work in Progress
+
+
 
 # More Ideas
 

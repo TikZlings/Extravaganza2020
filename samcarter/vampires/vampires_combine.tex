@@ -1,0 +1,32 @@
+\documentclass{beamer}
+
+\setbeamertemplate{navigations symbols}{}
+\usepackage{pgffor,tikz}
+
+\begin{document}
+
+\foreach \x in {1,...,100}{
+  \begin{frame}
+    \begin{tikzpicture}[remember picture, overlay]
+      \node at (current page.center) {\includegraphics[width=\paperwidth,page=1]{vampires}};
+    \end{tikzpicture}
+  \end{frame}
+}
+
+\foreach \x in {1,...,200}{
+  \begin{frame}
+    \begin{tikzpicture}[remember picture, overlay]
+      \node at (current page.center) {\includegraphics[width=\paperwidth,page=\x]{vampires}};
+    \end{tikzpicture}
+  \end{frame}
+}
+
+\foreach \x in {1,...,200}{
+  \begin{frame}
+    \begin{tikzpicture}[remember picture, overlay]
+      \node at (current page.center) {\includegraphics[width=\paperwidth,page=200]{vampires}};
+    \end{tikzpicture}
+  \end{frame}
+}
+
+\end{document}
