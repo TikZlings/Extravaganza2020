@@ -1,6 +1,8 @@
 % !Mode:: "TeX:UTF-8:Main"
 % gif command (hope it still works ...)
 % magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
+% this here slower, around 105!
+% magick -density 160 -delay 100 -loop 0 XXXX.pdf XXXX.gif
 \PassOptionsToPackage{svgnames,x11names}{xcolor}
 \documentclass{beamer}
 \usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
@@ -36,7 +38,7 @@
   (179.3851,144.9355) and (179.5159,145.9071) .. (179.8160,162.0361) --
   (180.1320,179.0219) -- (177.1429,182.0109) -- (174.1539,185.0000) --
   (112.5000,185.0000) -- (50.8462,185.0000) -- cycle;
-\end{scope}  
+\end{scope}
 \path[fill=#2]  (56.5667,132.7500) ..
   controls (59.5944,107.7429) and (75.2960,83.7816) .. (94.5000,74.8622) ..
   controls (97.2500,73.5849) and (99.6847,72.4212) .. (99.9105,72.2761) ..
@@ -62,7 +64,7 @@
   (123.9741,71.8415) -- (129.6984,74.4622) .. controls (149.5630,83.5565) and
   (165.3543,107.3191) .. (168.4332,132.7500) -- (169.0689,138.0000) --
   (112.5000,138.0000) -- (55.9311,138.0000) -- (56.5667,132.7500) -- cycle;
-  
+
 \end{scope}}
 \AddToShipoutPictureBG{%
  \AtPageLowerLeft{%
@@ -113,30 +115,55 @@
 \setbeamertemplate{background}{}
 \setbeamertemplate{background canvas}{}
 \begin{document}
+\AddToHook{shipout/foreground}{%
+ \put(0.8\paperwidth,-0.8\paperheight)
+ { \begin{tikzpicture}
+   \marmot;
+   \ifodd\value{page}
+    \fill[draw=brown!30!black,fill=brown,line width=0.4pt] (0.145,1.51) arc [start angle=-20, end angle=-160, radius=0.16] -- cycle;
+   \fi
+   \bobblehat{xkcdMauve}{xkcdBrickRed}
+   \end{tikzpicture}}}
+
+\AddToHook{shipout/foreground}{%
+ \put(0.7\paperwidth,-0.9\paperheight)
+  { \begin{tikzpicture}
+   \sheep;
+   \ifodd\value{page}
+    \fill[draw=brown!30!black,fill=brown,line width=0.4pt] (0.16,1.43) arc [start angle=-30, end angle=-90, radius=0.16] -- (0,1.164) -- (0,1.3485) arc [start angle=-90, end angle=-150, radius=0.16]-- cycle;
+   \fi
+   \bobblehat{xkcdMauve}{xkcdBrickRed}
+   \end{tikzpicture}
+  }
+  \put(0.6\paperwidth,-0.9\paperheight)
+  {\begin{tikzpicture}
+   \hippo;
+   \ifodd\value{page}
+   \fill[draw=brown!30!black,fill=brown,line width=0.4pt] (0.125, 1.5) arc [start angle=-50, end angle=-130, radius=0.2] -- cycle;
+   \fi
+   \bobblehat{xkcdMauve}{xkcdBrickRed}
+   \end{tikzpicture}
+  }
+  \put(0.5\paperwidth,-0.95\paperheight)
+  {\begin{tikzpicture}
+   \bear;
+   \ifodd\value{page}
+   \fill[draw=brown!30!black,fill=brown,line width=0.4pt] (0.145, 1.38) arc [start angle=-20, end angle=-160, radius=0.16] -- cycle;\fi
+   \begin{scope}%[scale=1.3,yshift=-4.2mm]
+   \bobblehat{xkcdCloudyBlue}{xkcdDullBlue}
+   \end{scope}
+   \end{tikzpicture}}}
+
+
 
 \begin{frame}
-
-\begin{tikzpicture}
-\marmot;
-\bobblehat{xkcdMauve}{xkcdBrickRed}
-\end{tikzpicture}
-\begin{tikzpicture}
-\sheep;
-\bobblehat{xkcdMauve}{xkcdBrickRed}
-\end{tikzpicture}
-\begin{tikzpicture}
-\bear;
-\begin{scope}%[scale=1.3,yshift=-4.2mm]
-\bobblehat{xkcdCloudyBlue}{xkcdDullBlue}
-\end{scope}
-\end{tikzpicture}
-\begin{tikzpicture}
-\hippo;
-\bobblehat{xkcdMauve}{xkcdBrickRed}
-\end{tikzpicture}
+\vspace*{3cm}
 
 \begin{tikzpicture}[scale=2]
 \marmot;
+\foreach\x in {1,2,...,10}{
+  \ifodd\x \only<\x>{
+ \fill[draw=brown!30!black,fill=brown,line width=0.4pt] (0.145,1.51) arc [start angle=-20, end angle=-160, radius=0.16] -- cycle;}\else\only<\x>{} \fi}
 \bobblehat{xkcdAquamarine}{xkcdBlueGreen}
 \end{tikzpicture}
 
