@@ -6,7 +6,9 @@
 \usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
 \setbeamertemplate{navigation symbols}{}
 \usepackage{tikzducks,tikzlings}
+\usetikzlibrary{patterns}
 \usepackage{bearwear}
+\usepackage{xkcdcolors}
 \definecolor{mask}{RGB}{171,201,177}
 \definecolor{swissred}{RGB}{216,30,5}
 \tikzset{swisscross/.pic={
@@ -29,11 +31,11 @@ yscale=-1,yshift=-240]
 %done Hippo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
 %done duck 
 %done Koala . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
-%Marmot . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+%done Marmot . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
 %Mole . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
-%Mouse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+%done Mouse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
 %Owl . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
-%Panda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+%done Panda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
 %Penguin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
 %Pig . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 %done Rhino . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
@@ -42,6 +44,44 @@ yscale=-1,yshift=-240]
 %Snowman . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
 \makeatletter
 \begin{frame}
+\begin{tikzpicture}
+\moles
+\begin{scope}
+	\clip	(0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
+
+  \fill[xkcdMint!60!white,opacity=0.9] (-3,1.4) rectangle (3,1.65);
+  \draw[pattern color=blue,pattern=horizontal lines](-3,1.4) rectangle (3,1.65);
+\end{scope}
+\end{tikzpicture}
+
+\end{frame}
+\end{document}
+
+\begin{tikzpicture}
+\mouse
+\begin{scope}
+	\clip	(0.5, 1.8) .. controls (0.5, 1.58) and (0.2, 1.25) .. (0, 1.16) .. controls (-0.2, 1.25) and (-0.5, 1.58) .. (-0.5, 1.8) .. controls (-0.34, 2.3) and (0.34, 2.3) .. (0.5, 1.8) -- cycle;
+
+       \fill[xkcdBrightPink!60!white,opacity=0.9] (-3,1.2) rectangle (3,1.6);
+       \draw[pattern color=blue,pattern=dots](-3,1.2) rectangle (3,1.6);
+\end{scope}
+\end{tikzpicture}
+
+\end{frame}
+\end{document}
+
+\begin{tikzpicture}
+\panda
+\begin{scope}
+		\clip   (0.4897, 1.5886) .. controls (0.4614, 1.8238) and (0.25, 2.1172) .. (0, 2.1134) .. controls (-0.25, 2.1172) and (-0.4614, 1.8238) .. (-0.4897, 1.5886) .. controls (-0.5261, 1.3269) and (-0.2748, 1.2377) .. (0, 1.2377) .. controls (0.2748, 1.2377) and (0.5261, 1.3269) .. (0.4897, 1.5886) -- cycle;
+
+       \fill[brown!60!white,opacity=0.8] (-3,1.4) rectangle (3,1.6);
+\end{scope}
+\end{tikzpicture}
+
+\end{frame}
+\end{document}
+
 \begin{tikzpicture}
 \marmot
 \begin{scope}
