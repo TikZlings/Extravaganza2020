@@ -82,6 +82,15 @@
 
 - Source Code: [./samcarter/lochness/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/lochness)
 
+## Grand Finale
+
+- Topic: tikzlings with masks, UN-flags or flags from various countries
+
+- Music: we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
+
+- Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
+
+
 # More Ideas
 
 
