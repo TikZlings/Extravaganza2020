@@ -29,15 +29,15 @@ yscale=-1,yshift=-240]
 %done Cat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
 %Coati . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
 %done Hippo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
-%done duck 
+%done duck
 %done Koala . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
 %done Marmot . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
 %done Mole . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
 %done Mouse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
-%Owl . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+%done Owl . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 %done Panda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
 %Penguin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
-%Pig . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+%done Pig . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 %done Rhino . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 %sheep
 %Sloth . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
@@ -45,6 +45,32 @@ yscale=-1,yshift=-240]
 %Snowman . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
 \makeatletter
 \begin{frame}
+\end{frame}%
+\end{document}
+%
+\begin{frame}
+\begin{tikzpicture}
+\penguin
+\begin{scope}
+  \clip (0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
+%	\clip	(0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
+%
+
+  %\fill[blue,opacity=0.8](-4,1.2) ellipse (4,1.4);
+  \fill[xkcdMint!50!white,opacity=0.8](0,1.33) ellipse [x radius=0.7, y radius=0.20];
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\owl
+\begin{scope}
+  \clip (0,1.55) ellipse[x radius=0.7, y radius=0.55];
+%	\clip	(0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
+%
+
+  \fill[yellow](-4,1.2) rectangle (4,1.4);
+  \fill[pattern=crosshatch dots](-4,1.2) rectangle (4,1.4);
+\end{scope}
+\end{tikzpicture}
 \begin{tikzpicture}
 \pig
 \begin{scope}
@@ -53,10 +79,8 @@ yscale=-1,yshift=-240]
   \fill[pattern color=xkcdArmyGreen,pattern=crosshatch dots light steel blue](-3,1.4) rectangle (3,1.65);
 \end{scope}
 \end{tikzpicture}
-
-\end{frame}
-
-\end{document}
+%
+%
 \begin{tikzpicture}
 \moles
 \begin{scope}
@@ -66,10 +90,8 @@ yscale=-1,yshift=-240]
   \draw[pattern color=blue,pattern=horizontal lines](-3,1.4) rectangle (3,1.65);
 \end{scope}
 \end{tikzpicture}
-
-\end{frame}
-\end{document}
-
+%
+%
 \begin{tikzpicture}
 \mouse
 \begin{scope}
@@ -79,10 +101,8 @@ yscale=-1,yshift=-240]
        \draw[pattern color=blue,pattern=dots](-3,1.2) rectangle (3,1.6);
 \end{scope}
 \end{tikzpicture}
-
-\end{frame}
-\end{document}
-
+%%
+%%
 \begin{tikzpicture}
 \panda
 \begin{scope}
@@ -91,10 +111,6 @@ yscale=-1,yshift=-240]
        \fill[brown!60!white,opacity=0.8] (-3,1.4) rectangle (3,1.6);
 \end{scope}
 \end{tikzpicture}
-
-\end{frame}
-\end{document}
-
 \begin{tikzpicture}
 \marmot
 \begin{scope}
@@ -103,11 +119,7 @@ yscale=-1,yshift=-240]
        \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.3) rectangle (3,1.6);
 \end{scope}
 \end{tikzpicture}
-
-\end{frame}
-\end{document}
-
-
+%
 \begin{tikzpicture}
 	\duck[]
 
@@ -122,9 +134,8 @@ yscale=-1,yshift=-240]
   \duck[scale=0.05, shift={(15,22)}]
 
 \end{tikzpicture}	
-\end{frame}
-\end{document}
-
+%
+%
 \begin{tikzpicture}
 \koala
 \begin{scope}
@@ -133,8 +144,6 @@ yscale=-1,yshift=-240]
        \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.3) rectangle (3,1.6);
 \end{scope}
 \end{tikzpicture}
-
-
 %\begin{tikzpicture}
 %\anteater
 %%\begin{scope}
@@ -142,7 +151,7 @@ yscale=-1,yshift=-240]
 %%       \fill[mask!80!red] (-3,1.45) rectangle (3,1.65);
 %%\end{scope}
 %\end{tikzpicture}
-
+%
 %\begin{tikzpicture}
 %\coati
 %\begin{scope}
@@ -151,19 +160,6 @@ yscale=-1,yshift=-240]
 %       \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.5) rectangle (3,1.7);
 %\end{scope}
 %\end{tikzpicture}
-
-\end{frame}
-\end{document}
-
-\begin{tikzpicture}
-\koala
-\begin{scope}
-		\clip   (-0.1,2.1) to[out=180,in=140,looseness=1.2] (-0.4,1.5) to[out=-110,in=180,looseness=1.2] (-0.1,0.15) to[out=00,in=-65,looseness=1.2] (0.4,1.5) to[out=40,in=0,looseness=1.2] cycle;
-
-       \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.3) rectangle (3,1.6);
-\end{scope}
-\end{tikzpicture}
-
 \begin{tikzpicture}
 \cat
 \begin{scope}
@@ -172,7 +168,6 @@ yscale=-1,yshift=-240]
        \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.5) rectangle (3,1.7);
 \end{scope}
 \end{tikzpicture}
-
 \begin{tikzpicture}
 \bee
 \begin{scope}
@@ -181,8 +176,6 @@ yscale=-1,yshift=-240]
        \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.5) rectangle (3,1.7);
 \end{scope}
 \end{tikzpicture}
-
-
 \begin{tikzpicture}
 \rhino
 \begin{scope}
@@ -190,8 +183,6 @@ yscale=-1,yshift=-240]
        \fill[mask!80!red] (-3,1.45) rectangle (3,1.65);
 \end{scope}
 \end{tikzpicture}
-
-
 \begin{tikzpicture}
 \hippo
 \begin{scope}
@@ -199,12 +190,6 @@ yscale=-1,yshift=-240]
        \fill[mask!80!red] (-3,1.45) rectangle (3,1.65);
 \end{scope}
 \end{tikzpicture}
-
-
-\begin{tikzpicture}
-\duck
-\end{tikzpicture}
-
 \begin{tikzpicture}\bear\bearwear[shirt=white,t-shirt,body deco={\path (beartummy)--++(0.1,-0.1) pic[scale=0.04]{swisscross};}]
 \begin{scope}
 		\clip (0, 1.55) circle (0.5);
@@ -216,3 +201,5 @@ yscale=-1,yshift=-240]
 %\path (0,0) pic{swisscross};
 \end{tikzpicture}
 
+\end{frame}
+\end{document}
