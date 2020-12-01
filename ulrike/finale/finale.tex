@@ -5,7 +5,7 @@
 \documentclass{beamer}
 \usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
 \setbeamertemplate{navigation symbols}{}
-\usepackage{tikzducks,tikzlings}
+\usepackage{tikzducks,tikzlings,sheep}
 \usetikzlibrary{patterns}
 \usepackage{bearwear}
 \usepackage{xkcdcolors}
@@ -36,19 +36,43 @@ yscale=-1,yshift=-240]
 %done Mouse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
 %done Owl . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 %done Panda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
-%Penguin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+%done Penguin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
 %done Pig . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 %done Rhino . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 %sheep
 %Sloth . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
-%Squirrel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+%done Squirrel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
 %Snowman . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
 \makeatletter
 \begin{frame}
-\end{frame}%
+\begin{tikzpicture}
+  \anteater
+\end{tikzpicture}
+\begin{tikzpicture}
+  \sloth
+\end{tikzpicture}
+\begin{tikzpicture}
+  \coati
+\end{tikzpicture}
+\begin{tikzpicture}
+  \snowman
+\end{tikzpicture}
+\begin{tikzpicture}
+  \sheep
+\end{tikzpicture}
+\end{frame}
 \end{document}
-%
 \begin{frame}
+\begin{tikzpicture}
+\squirrel
+\begin{scope}
+  \clip (0,1.75) circle[radius=0.3]  (0.2,1.6) circle[radius=0.15]  (-0.2,1.6) circle[radius=0.15];
+
+
+  %\fill[blue,opacity=0.8](-4,1.2) ellipse (4,1.4);
+  \fill[xkcdElectricLime!80!white,opacity=0.8](0,1.6) ellipse [x radius=0.4, y radius=0.1];
+\end{scope}
+\end{tikzpicture}
 \begin{tikzpicture}
 \penguin
 \begin{scope}
