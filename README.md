@@ -92,9 +92,11 @@
 
 ## Baaaaa
 
+<img align="right" src="./storyboard/previews/baaaaa.png" height="100">
+
 - Topic: Sheep sounds in many different languages
 
-- Music: https://www.youtube.com/watch?v=D5bjo4rMOAU
+- "Music": https://www.youtube.com/watch?v=D5bjo4rMOAU
 
 - Source Code: [./samcarter/baaaaa/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/baaaaa)
 
