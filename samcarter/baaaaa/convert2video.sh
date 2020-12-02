@@ -4,8 +4,11 @@ rm baaaaa.mp4
 # convert to png images
 convert -density 240 baaaaa.pdf baaaaa.png
 
-# convert to video
-ffmpeg -ss 00:00:00 -i baaaaa-%d.png -ss 00:00:00 -i SheepBaa.m4a -shortest baaaaa_raw.mp4
+## convert to video
+ffmpeg -ss 00:00:00 -i baaaaa-%d.png \
+       -ss 00:00:00 -itsoffset 00:00:03 -i SheepBaa.m4a \
+       -ss 00:00:00 -itsoffset 00:00:08 -i SheepBaa.m4a \
+       baaaaa_raw.mp4
 
 # repair video
 HandBrakeCLI --crop 0:0:0:0  -i baaaaa_raw.mp4 -o baaaaa.mp4
