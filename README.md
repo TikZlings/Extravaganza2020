@@ -72,15 +72,17 @@
 
 - Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
 
-# Work in Progress
-
 ## Amazing ducks
+
+<img align="right" src="./storyboard/previews/lochness.png" height="100">
 
 - Topic: ducks with bagpipes in loch ness landscape
 
 - Music: amazing grace https://youtu.be/M8AeV8Jbx6M 0:58-1:23
 
 - Source Code: [./samcarter/lochness/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/lochness)
+
+# Work in Progress
 
 ## Grand Finale
 

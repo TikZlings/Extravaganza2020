@@ -20,7 +20,7 @@
       \pgfmathparse{10*sin(\thepage)}	
       \includegraphics[angle=\pgfmathresult,origin=c,scale=0.8]{scot-duck-UF}
     };
-    \node[xscale=-1] at (0.5cm,-3.5cm) {
+    \node[xscale=-1] at (0.5cm,-3.8cm) {
       \pgfmathparse{10*sin(\thepage)}
       \includegraphics[angle=\pgfmathresult,origin=c]{scot-duck-UF}
     };
@@ -29,9 +29,57 @@
       \includegraphics[angle=\pgfmathresult,origin=c,scale=1.05]{scot-duck-UF}
     };
     
+    % reflection
+    \begin{scope}
+      \clip (7,1.2) rectangle ++(2.6,-1);
+      \node at (8.3,7.4-\thepage*6.2/400) {\includegraphics[width=2cm]{nessi2a}};
+    \end{scope}    
+    
+    % real nessi
+    \begin{scope}
+      \clip (7,1.2) rectangle ++(2.6,1);
+      \node at (8.3,-5+\thepage*6.2/400) {\includegraphics[width=2cm]{nessi1}};
+    \end{scope}
+    
     \node at ([yshift=0.2cm]current page.south) {\color{white}\Tiny Background image: \url{https://commons.wikimedia.org/wiki/File:Urquhart_Castle,_Loch_Ness,_Inverness,_Scotland_(17101840068).jpg}};
   \end{tikzpicture}
-%	\pause[750]
+	\pause[400]
+\end{frame}	
+
+\begin{frame}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[xscale=-1] at (2cm,-2.25cm) {
+      \pgfmathparse{10*cos(\thepage)}
+      \includegraphics[angle=\pgfmathresult,origin=c,scale=0.75]{scot-duck-UF}
+    };    
+    \node at (4.5,-2.5) {
+      \pgfmathparse{10*sin(\thepage)}	
+      \includegraphics[angle=\pgfmathresult,origin=c,scale=0.8]{scot-duck-UF}
+    };
+    \node[xscale=-1] at (0.5cm,-3.8cm) {
+      \pgfmathparse{10*sin(\thepage)}
+      \includegraphics[angle=\pgfmathresult,origin=c]{scot-duck-UF}
+    };
+    \node at (7cm,-3.7cm) {
+      \pgfmathparse{20*cos(\thepage)}
+      \includegraphics[angle=\pgfmathresult,origin=c,scale=1.05]{scot-duck-UF}
+    };
+    
+    % reflection
+    \begin{scope}
+      \clip (7,1.2) rectangle ++(2.6,-1);
+      \node at (8.3,1.2) {\includegraphics[width=2cm]{nessi2a}};
+    \end{scope}    
+    
+    % real nessi
+    \begin{scope}
+      \clip (7,1.2) rectangle ++(2.6,1);
+      \node at (8.3,1.2) {\includegraphics[width=2cm]{nessi1}};
+    \end{scope}
+    
+    \node at ([yshift=0.2cm]current page.south) {\color{white}\Tiny Background image: \url{https://commons.wikimedia.org/wiki/File:Urquhart_Castle,_Loch_Ness,_Inverness,_Scotland_(17101840068).jpg}};
+  \end{tikzpicture}
+	\pause[200]
 \end{frame}	
 
 \end{document}
