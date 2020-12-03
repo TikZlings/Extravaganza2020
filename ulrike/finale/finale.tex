@@ -44,13 +44,11 @@ yscale=-1,yshift=-240]
 %done Squirrel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
 %Snowman . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
 \makeatletter
+\tikzset{every picture/.style={scale=0.6}}
 \begin{frame}
 \begin{tikzpicture}
   \anteater
   \begin{scope}
- % \clip (-0.75,0.1) rectangle (1.12,2.26); 
-  %\draw[->] (-1,0) -- (1,0) -- (1,2) -- (-1,2)--cycle;
-  %\draw[->] (-1,2) -- (1,2) -- (1,0) -- (-1,0)--cycle;
   \clip  (0.33, 1.71) .. controls (0.16, 1.52) and (0.1, 1.5) .. (0.08, 1.05) .. controls (0.07, 1) and (-0.07, 1) .. (-0.08, 1.05) .. controls (-0.1, 1.5) and (-0.16, 1.52) .. (-0.33, 1.7) .. controls (-0.45, 1.85) and (-0.22, 2.05) .. (0, 2.05) .. controls (0.22, 2.05) and (0.45, 1.85) .. (0.33, 1.7) -- cycle;
 
   \fill[xkcdMint!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.75)--(1,1)--cycle ;
@@ -61,9 +59,6 @@ yscale=-1,yshift=-240]
   (0.3508, 1.739) .. controls (0.3508, 1.739) and (0.2861, 1.8489) .. (0.1571, 1.7664) .. controls (0.0279, 1.684) and (0.0627, 1.0524) .. (0.0627, 1.0524) .. controls (0.0627, 1.0524) and (0.131, 1.3772) .. (0.2314, 1.44) .. controls (0.3599, 1.5206) and (0.3508, 1.739) .. (0.3508, 1.739) -- cycle
   (-0.3508, 1.739) .. controls (-0.3508, 1.739) and (-0.2861, 1.8489) .. (-0.1571, 1.7664) .. controls (-0.0279, 1.684) and (-0.0627, 1.0524) .. (-0.0627, 1.0524) .. controls (-0.0627, 1.0524) and (-0.131, 1.3772) .. (-0.2314, 1.44) .. controls (-0.3599, 1.5206) and (-0.3508, 1.739) .. (-0.3508, 1.739) -- cycle ;
   %
-% \clip ( 0.40,1.67) .. controls ( 0.40,1.90) and ( 0.12,2.09) .. ( 0.00,1.93) .. controls (-0.12,2.09) and (-0.40,1.90) .. (-0.40,1.67) .. controls (-0.40,1.45) and (-0.25,1.38) .. ( 0.00,1.38) .. controls ( 0.25,1.38) and ( 0.40,1.45) .. ( 0.40,1.67) -- cycle;
-%
-  %\fill[blue,opacity=0.8](-4,1.2) ellipse (4,1.4);
   \fill[xkcdMint!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.75)--(1,1)--cycle ;
   \fill[pattern=crosshatch dots](-1,1)--(0,1.75)--(1,1)--cycle ;
 \end{scope}
@@ -72,24 +67,43 @@ yscale=-1,yshift=-240]
   \sloth
   \begin{scope}
  \clip ( 0.40,1.67) .. controls ( 0.40,1.90) and ( 0.12,2.09) .. ( 0.00,1.93) .. controls (-0.12,2.09) and (-0.40,1.90) .. (-0.40,1.67) .. controls (-0.40,1.45) and (-0.25,1.38) .. ( 0.00,1.38) .. controls ( 0.25,1.38) and ( 0.40,1.45) .. ( 0.40,1.67) -- cycle;
-% 
-  %\fill[blue,opacity=0.8](-4,1.2) ellipse (4,1.4);
-  \fill[xkcdMint!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.75)--(1,1)--cycle ;
+  \fill[xkcdLilac!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.75)--(1,1)--cycle ;
   \fill[pattern=crosshatch dots](-1,1)--(0,1.75)--(1,1)--cycle ;
 \end{scope}
 \end{tikzpicture}
 \begin{tikzpicture}
   \coati
+  \begin{scope}
+  \clip  (0.33, 1.71) .. controls (0.16, 1.52) and (0.1, 1.5) .. (0.08, 1.05) .. controls (0.07, 1) and (-0.07, 1) .. (-0.08, 1.05) .. controls (-0.1, 1.5) and (-0.16, 1.52) .. (-0.33, 1.7) .. controls (-0.45, 1.85) and (-0.22, 2.05) .. (0, 2.05) .. controls (0.22, 2.05) and (0.45, 1.85) .. (0.33, 1.7) -- cycle;
+
+  \fill[xkcdRed!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.65)--(1,1)--cycle ;
+  %\fill[pattern=grid](-1,1)--(0,1.65)--(1,1)--cycle ;
+  \end{scope}
+  \begin{scope}
+  \clip
+  (0.3508, 1.739) .. controls (0.3508, 1.739) and (0.2861, 1.8489) .. (0.1571, 1.7664) .. controls (0.0279, 1.684) and (0.0627, 1.0524) .. (0.0627, 1.0524) .. controls (0.0627, 1.0524) and (0.131, 1.3772) .. (0.2314, 1.44) .. controls (0.3599, 1.5206) and (0.3508, 1.739) .. (0.3508, 1.739) -- cycle
+  (-0.3508, 1.739) .. controls (-0.3508, 1.739) and (-0.2861, 1.8489) .. (-0.1571, 1.7664) .. controls (-0.0279, 1.684) and (-0.0627, 1.0524) .. (-0.0627, 1.0524) .. controls (-0.0627, 1.0524) and (-0.131, 1.3772) .. (-0.2314, 1.44) .. controls (-0.3599, 1.5206) and (-0.3508, 1.739) .. (-0.3508, 1.739) -- cycle ;
+
+  \fill[xkcdRed!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.65)--(1,1)--cycle ;
+  %\fill[pattern=north east lines](-1,1)--(0,1.65)--(1,1)--cycle ;
+\end{scope}  
 \end{tikzpicture}
 \begin{tikzpicture}
   \snowman
+  \begin{scope}
+		\clip (0,1.7) circle[radius=0.4];
+  \fill[orange!80!black,opacity=0.7] (-3,1.45) rectangle (3,1.7);
+\end{scope}
 \end{tikzpicture}
 \begin{tikzpicture}
   \sheep
+  \begin{scope}
+  \clip (0.4, 1.8) .. controls (0.4, 1.5) and (0.2, 1.25) .. (0, 1.16) .. controls (-0.2, 1.25) and (-0.4, 1.5) .. (-0.4, 1.8) .. controls (-0.34, 2.3) and (0.34, 2.3) .. (0.4, 1.8) -- cycle;
+    \fill[xkcdCerulean!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.65)--(1,1)--cycle ;
+  \fill[pattern=crosshatch dots](-1,1)--(0,1.65)--(1,1)--cycle ;
+
+  \end{scope}
 \end{tikzpicture}
-\end{frame}
-\end{document}
-\begin{frame}
 \begin{tikzpicture}
 \squirrel
 \begin{scope}
