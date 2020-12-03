@@ -7,7 +7,6 @@
 \usepackage{tikzducks,tikzlings}
 \usetikzlibrary{fpu}
 
-% change back to 25
 \NewDocumentEnvironment{scene}{m+b}{\pgfmathparse{ceil(25 * #1)}%
 \foreach\x in {1,..., \pgfmathresult}{\begin{frame}
 #2
@@ -15,7 +14,7 @@
 
 \begin{document}
 
-\begin{scene}{1}
+\begin{scene}{2.5}
 
 \begin{tikzpicture}
 \node {\scalebox{-1}[1]{\includegraphics[scale=6]{assets/pallbearer.pdf}}};
@@ -23,7 +22,7 @@
 
 \end{scene}
 
-\begin{scene}{1}
+\begin{scene}{2.5}
 
 \begin{tikzpicture}
 \node {\scalebox{1}[1]{\includegraphics[scale=6]{assets/pallbearer.pdf}}};
@@ -31,7 +30,7 @@
 
 \end{scene}
 
-\begin{scene}{1}
+\begin{scene}{2.5}
 
 \begin{tikzpicture}[remember picture, overlay]
 \node at (2,-0.7) {\scalebox{-1}[1]{\includegraphics[scale=4]{assets/pallbearer.pdf}}};
@@ -41,7 +40,7 @@
 \end{scene}
 
 
-\begin{scene}{4}
+\begin{scene}{15.5}
 
 \begin{tikzpicture}[remember picture,overlay,xscale=1.5,yscale=1.5]
 \begin{scope}[xshift=3.5cm, yshift=-.7cm]
