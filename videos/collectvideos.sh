@@ -9,3 +9,4 @@ cp ../samcarter/vampires/vampires.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
 cp ../ulrike/bobble/bobble.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;    
 cp ../samcarter/lochness/lochness.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 cp ../samcarter/baaaaa/baaaaa.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
+cp ../paulo/xcoffins/xcoffins.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;

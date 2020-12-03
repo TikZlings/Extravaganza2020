@@ -92,6 +92,15 @@
 
 - Source Code: [./samcarter/baaaaa/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/baaaaa)
 
+## xcoffins
+
+<img align="right" src="./storyboard/previews/xcoffins.png" height="100">
+
+- Topic: ...
+
+- Music: ...
+
+- Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
 
 # Work in Progress
 
