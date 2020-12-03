@@ -17,15 +17,43 @@
 
 \begin{scene}{1}
 
+\begin{tikzpicture}
+\node {\scalebox{-1}[1]{\includegraphics[scale=6]{assets/pallbearer.pdf}}};
+\end{tikzpicture}
+
+\end{scene}
+
+\begin{scene}{1}
+
+\begin{tikzpicture}
+\node {\scalebox{1}[1]{\includegraphics[scale=6]{assets/pallbearer.pdf}}};
+\end{tikzpicture}
+
+\end{scene}
+
+\begin{scene}{1}
+
+\begin{tikzpicture}
+\node at (1,0) {\scalebox{-1}[1]{\includegraphics[scale=4]{assets/pallbearer.pdf}}};
+\node at (8,0) {\scalebox{1}[1]{\includegraphics[scale=4]{assets/pallbearer.pdf}}};
+\end{tikzpicture}
+
+\end{scene}
+
+
+\begin{scene}{4}
+
 \begin{tikzpicture}[remember picture,overlay,xscale=1.5,yscale=1.5]
-\node at (3.5,0){\includegraphics[scale=.5]{assets/casket.pdf}};
+\begin{scope}[xshift=3.5cm, yshift=-.7cm]
+\node at ({90+60*sin(15*\thepage)}:1) {\includegraphics[scale=.5]{assets/casket.pdf}};
+\end{scope}
 
 \begin{scope}[xshift=2cm,yshift=-2cm]
-  \node at ({90+60*sin(10*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
+  \node at ({90+60*sin(15*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
 \end{scope}
 
 \begin{scope}[xshift=5cm,yshift=-2cm]
-  \node at ({90+60*sin(10*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
+  \node at ({90+60*sin(15*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
 \end{scope}
 
 \end{tikzpicture}
