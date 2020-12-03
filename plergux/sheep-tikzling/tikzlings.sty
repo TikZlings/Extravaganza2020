@@ -1,0 +1,70 @@
+% !TeX root = ./examples/tikzlings.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the main part of the TikZlings package
+% A package to bring cute little animals and other beings into tikz
+% Maintained by samcarter
+%
+% Project repository and bug tracker:
+% https://github.com/samcarter/tikzlings
+%
+% Released under the LaTeX Project Public License v1.3c or later
+% See http://www.latex-project.org/lppl.txt
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{tikzlings}[2020/04/22 version v0.3 Collection of packages to draw animals and other beings in TikZ]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% load sub-packages
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{tikz}
+\RequirePackage{tikzlings-bears}
+\RequirePackage{tikzlings-penguins}
+\RequirePackage{tikzlings-marmots}
+\RequirePackage{tikzlings-owls}
+\RequirePackage{tikzlings-koalas}
+\RequirePackage{tikzlings-coatis}
+\RequirePackage{tikzlings-snowmans}
+\RequirePackage{tikzlings-mice}
+\RequirePackage{tikzlings-moles}
+\RequirePackage{tikzlings-sloths}
+\RequirePackage{tikzlings-pigs}
+\RequirePackage{tikzlings-cats}
+\RequirePackage{tikzlings-hippos}
+\RequirePackage{tikzlings-rhinos}
+\RequirePackage{tikzlings-pandas}
+\RequirePackage{tikzlings-bees}
+\RequirePackage{tikzlings-anteaters}
+\RequirePackage{tikzlings-squirrels}
+\RequirePackage{tikzlings-addons}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Drawing a random tikzling
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{expl3}
+\ExplSyntaxOn
+\ifdefined\sys_rand_seed:
+  \pgfmathsetseed {\sys_rand_seed:}
+\else
+  \ifdefined\pdfrandomseed % pdflatex
+  \else
+      \ifdefined\randomseed 
+        \let\pdfrandomseed\randomseed % post TL19 xelatex and lualatex
+      \else
+          \let\pdfrandomseed\time % pre TL19 xelatex
+      \fi
+  \fi
+  \pgfmathsetseed{\number\pdfrandomseed} 
+\fi
+\ExplSyntaxOff
+
+\pgfmathdeclarerandomlist{tikzlings}{{\bear}{\penguin}{\marmot}{\owl}{\koala}{\coati}{\snowman}{\mouse}{\moles}{\sloth}{\pig}{\cat}{\hippo}{\rhino}{\bee}{\anteater}}
+
+\newcommand{\tikzling}[1][]{%
+  \pgfmathrandomitem{\tikzling@random}{tikzlings}%
+  \tikzling@random[#1]
+}

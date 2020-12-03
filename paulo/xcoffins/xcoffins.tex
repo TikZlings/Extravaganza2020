@@ -1,0 +1,62 @@
+\documentclass{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{graphicx}
+
+\usepackage{tikzducks,tikzlings}
+\usetikzlibrary{fpu}
+
+\NewDocumentEnvironment{scene}{m+b}{\pgfmathparse{ceil(25 * #1)}%
+\foreach\x in {1,..., \pgfmathresult}{\begin{frame}
+#2
+\end{frame}}}{}{}
+
+\begin{document}
+
+\begin{scene}{2.5}
+
+\begin{tikzpicture}
+\node {\scalebox{-1}[1]{\includegraphics[scale=6]{assets/pallbearer.pdf}}};
+\end{tikzpicture}
+
+\end{scene}
+
+\begin{scene}{2.5}
+
+\begin{tikzpicture}
+\node {\scalebox{1}[1]{\includegraphics[scale=6]{assets/pallbearer.pdf}}};
+\end{tikzpicture}
+
+\end{scene}
+
+\begin{scene}{2.5}
+
+\begin{tikzpicture}[remember picture, overlay]
+\node at (2,-0.7) {\scalebox{-1}[1]{\includegraphics[scale=4]{assets/pallbearer.pdf}}};
+\node at (9,-0.7) {\scalebox{1}[1]{\includegraphics[scale=4]{assets/pallbearer.pdf}}};
+\end{tikzpicture}
+
+\end{scene}
+
+
+\begin{scene}{15.5}
+
+\begin{tikzpicture}[remember picture,overlay,xscale=1.5,yscale=1.5]
+\begin{scope}[xshift=3.5cm, yshift=-.7cm]
+\node at ({90+60*sin(15*\thepage)}:1) {\includegraphics[scale=.5]{assets/casket.pdf}};
+\end{scope}
+
+\begin{scope}[xshift=2cm,yshift=-2cm]
+  \node at ({90+60*sin(15*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
+\end{scope}
+
+\begin{scope}[xshift=5cm,yshift=-2cm]
+  \node at ({90+60*sin(15*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
+\end{scope}
+
+\end{tikzpicture}
+
+\end{scene}
+
+\end{document}

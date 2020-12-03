@@ -72,15 +72,37 @@
 
 - Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
 
-# Work in Progress
-
 ## Amazing ducks
+
+<img align="right" src="./storyboard/previews/lochness.png" height="100">
 
 - Topic: ducks with bagpipes in loch ness landscape
 
 - Music: amazing grace https://youtu.be/M8AeV8Jbx6M 0:58-1:23
 
 - Source Code: [./samcarter/lochness/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/lochness)
+
+## Baaaaa
+
+<img align="right" src="./storyboard/previews/baaaaa.png" height="100">
+
+- Topic: Sheep sounds in many different languages
+
+- "Music": https://www.youtube.com/watch?v=D5bjo4rMOAU
+
+- Source Code: [./samcarter/baaaaa/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/baaaaa)
+
+## xcoffins
+
+<img align="right" src="./storyboard/previews/xcoffins.png" height="100">
+
+- Topic: Dancing duck pallbearers
+
+- Music: Astronomia https://www.youtube.com/watch?v=iLBBRuVDOo4
+
+- Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
+
+# Work in Progress
 
 ## Grand Finale
 
@@ -89,7 +111,6 @@
 - Music: we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
 
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
-
 
 # More Ideas
 

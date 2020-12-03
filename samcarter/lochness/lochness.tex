@@ -12,37 +12,46 @@
 
 \begin{frame}
   \begin{tikzpicture}[remember picture, overlay]
-%    \begin{scope}[
-%      xshift=(3-6.5*\thepage/750)*100
-%    ]
-%      \begin{scope}[yshift=-2.7cm, xshift=7.5cm]
-%        \duck[
-%          body= yellow!70!brown!80!gray,
-%          stripes={\stripes[color=blue!70!darkgray!80!gray,rotate=-87,width=0.07,distance=0.12]},
-%          hat=white!80!gray,
-%          tshirt=white!80!gray,
-%          neckerchief=red!70!gray!80!gray,
-%          woggle=red!70!gray!80!gray
-%        ]
-%        %
-%        % adding red stripe to hat
-%        \fill[red!70!gray!80!gray,rotate=-15] (0.44,2.15) ellipse[x radius=0.37, y radius=0.08];
-%        \fill[red!70!gray!80!gray,rotate=-15] (0.07,2.15) rectangle (0.81,2.25);
-%        \fill[white!80!gray,rotate=-15] (0.44,2.25) ellipse[x radius=0.37, y radius=0.08];
-%        %
-%        % passangers
-%        \node at (-2.5,0.8) {\includegraphics[scale=0.8]{ernest}};
-%        \node at (-1.4,0.7) {\includegraphics[scale=1.2]{Miss_Marmot}};
-%        %
-%        \node at (-1.5,0) {\includegraphics[width=9cm]{gondola}};
-%        %
-%        % boat oars
-%        \draw[black!70!gray,line width=4pt,line cap=round] (2,-1.5) -- (-0.5,2.3);
-%      \end{scope}
-%    \end{scope}
+    \node[xscale=-1] at (2cm,-2.25cm) {
+      \pgfmathparse{10*cos(\thepage)}
+      \includegraphics[angle=\pgfmathresult,origin=c,scale=0.75]{scot-duck-UF}
+    };    
+    \node at (4.5,-2.5) {
+      \pgfmathparse{10*sin(\thepage)}	
+      \includegraphics[angle=\pgfmathresult,origin=c,scale=0.8]{scot-duck-UF}
+    };
+    \node[xscale=-1] at (0.5cm,-3.8cm) {
+      \pgfmathparse{10*sin(\thepage)}
+      \includegraphics[angle=\pgfmathresult,origin=c]{scot-duck-UF}
+    };
+    \node at (7cm,-3.7cm) {
+      \pgfmathparse{20*cos(\thepage)}
+      \includegraphics[angle=\pgfmathresult,origin=c,scale=1.05]{scot-duck-UF}
+    };
+    
+    % reflection
+    \begin{scope}
+      \clip (7,1.2) rectangle ++(2.6,-1);
+      \ifnum\thepage < 600
+        \node at (8.3,6.4-\thepage*5.2/600) {\includegraphics[width=2cm]{nessi2a}};
+      \else
+        \node at (8.3,1.2) {\includegraphics[width=2cm]{nessi2a}};
+      \fi
+    \end{scope}    
+    
+    % real nessi
+    \begin{scope}
+      \clip (7,1.2) rectangle ++(2.6,1);
+      \ifnum\thepage < 600
+        \node at (8.3,-4+\thepage*5.2/600) {\includegraphics[width=2cm]{nessi1}};
+      \else
+        \node at (8.3,1.2) {\includegraphics[width=2cm]{nessi1}};
+      \fi
+    \end{scope}
+    
     \node at ([yshift=0.2cm]current page.south) {\color{white}\Tiny Background image: \url{https://commons.wikimedia.org/wiki/File:Urquhart_Castle,_Loch_Ness,_Inverness,_Scotland_(17101840068).jpg}};
   \end{tikzpicture}
-%	\pause[750]
+	\pause[800]
 \end{frame}	
 
 \end{document}
