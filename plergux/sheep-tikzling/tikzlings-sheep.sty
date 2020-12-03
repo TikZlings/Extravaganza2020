@@ -15,8 +15,11 @@
 \ProvidesPackage{tikzlings-sheep}[2020/04/22 version v0.3 Drawing sheep in TikZ]
 
 \RequirePackage{tikz}
-\usetikzlibrary {decorations.pathmorphing}
 \RequirePackage{tikzlings-addons}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{fadings}
+
+\tikzfading[name=sheep@blush,inner color=transparent!50,outer color=transparent!100]
 
 \newcommand*{\sheep}[1][]{%
   \begin{scope}%
@@ -29,7 +32,10 @@
   \csname tikzlinghookforeground\endcsname
 }
 
+
 \newif\ifsheep@threeD
+\newif\ifsheep@monocle
+\newif\ifsheep@blush
 \newif\ifsheep@back
 
 \tikzset{
@@ -52,8 +58,10 @@
   % options
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  3D/.code           = \sheep@threeDtrue,  
-  back/.code         = \sheep@backtrue,  
+  blush/.code        = \sheep@blushtrue,
+  monocle/.code    = \sheep@monocletrue,
+  3D/.code           = \sheep@threeDtrue, 
+  back/.code        = \sheep@backtrue,  
 }
 
 \def\sheep@draw{%
@@ -163,8 +171,19 @@
 % Hair %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \sheep@part@draw[\sheep@body!50!darkgray,decorate,decoration={bumps}] (-0.275,1.98) -- (-0.2,2.2)  -- (-0.008,2.2) -- (0.2,2.2) -- (0.275,1.98) -- cycle;
 %
+% Blush %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifsheep@blush
+  \fill[red,path fading=sheep@blush] (-0.25, 1.5) circle[radius=0.1]; 
+  \fill[red,path fading=sheep@blush] (0.25, 1.5) circle[radius=0.1];
 \fi
-
+%
+% monocle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifsheep@monocle
+  \draw[black,thin] (0.2, 1.66) circle[radius=0.03];
+\fi
+%
+\fi
+ 
 % adding hook for users to customise %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \csname sheephookbody\endcsname
 \csname tikzlinghookbody\endcsname
