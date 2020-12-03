@@ -72,23 +72,15 @@
 
 - Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
 
-# Work in Progress
-
 ## Amazing ducks
+
+<img align="right" src="./storyboard/previews/lochness.png" height="100">
 
 - Topic: ducks with bagpipes in loch ness landscape
 
 - Music: amazing grace https://youtu.be/M8AeV8Jbx6M 0:58-1:23
 
 - Source Code: [./samcarter/lochness/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/lochness)
-
-## Grand Finale
-
-- Topic: tikzlings with masks, UN-flags or flags from various countries
-
-- Music: we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
-
-- Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
 
 ## Baaaaa
 
@@ -100,6 +92,16 @@
 
 - Source Code: [./samcarter/baaaaa/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/baaaaa)
 
+
+# Work in Progress
+
+## Grand Finale
+
+- Topic: tikzlings with masks, UN-flags or flags from various countries
+
+- Music: we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
+
+- Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
 
 # More Ideas
 

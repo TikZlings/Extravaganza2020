@@ -6,8 +6,7 @@ convert -density 240 baaaaa.pdf baaaaa.png
 
 ## convert to video
 ffmpeg -ss 00:00:00 -i baaaaa-%d.png \
-       -ss 00:00:00 -itsoffset 00:00:03 -i SheepBaa.m4a \
-       -ss 00:00:00 -itsoffset 00:00:08 -i SheepBaa.m4a \
+       -ss 00:00:00 -i sheep.mp3 \
        baaaaa_raw.mp4
 
 # repair video
