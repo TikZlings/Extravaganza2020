@@ -96,9 +96,9 @@
 
 <img align="right" src="./storyboard/previews/xcoffins.png" height="100">
 
-- Topic: ...
+- Topic: Dancing duck pallbearers
 
-- Music: ...
+- Music: Astronomia https://www.youtube.com/watch?v=iLBBRuVDOo4
 
 - Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
 
