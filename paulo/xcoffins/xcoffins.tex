@@ -8,7 +8,7 @@
 \usetikzlibrary{fpu}
 
 % change back to 25
-\NewDocumentEnvironment{scene}{m+b}{\pgfmathparse{ceil(1 * #1)}%
+\NewDocumentEnvironment{scene}{m+b}{\pgfmathparse{ceil(25 * #1)}%
 \foreach\x in {1,..., \pgfmathresult}{\begin{frame}
 #2
 \end{frame}}}{}{}
@@ -17,13 +17,19 @@
 
 \begin{scene}{1}
 
-\centering
+\begin{tikzpicture}[remember picture,overlay,xscale=1.5,yscale=1.5]
+\node at (3.5,0){\includegraphics[scale=.5]{assets/casket.pdf}};
 
-\begin{tikzpicture}[xscale=1.5,yscale=1.5]
-\node {\includegraphics[scale=.5]{assets/casket.pdf}};
-\duck[xshift=-2.5cm, yshift=-2.5cm, jacket=black, tophat, sunglasses, lapel=gray, buttons=gray, tshirt=white];
-\duck[xshift=0.5cm, yshift=-2.5cm, jacket=black, tophat, sunglasses, lapel=gray, buttons=gray, tshirt=white];
+\begin{scope}[xshift=2cm,yshift=-2cm]
+  \node at ({90+60*sin(10*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
+\end{scope}
+
+\begin{scope}[xshift=5cm,yshift=-2cm]
+  \node at ({90+60*sin(10*\thepage)}:1) {\includegraphics[scale=1.5]{assets/pallbearer.pdf}};
+\end{scope}
+
 \end{tikzpicture}
+
 \end{scene}
 
 \end{document}
