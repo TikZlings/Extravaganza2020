@@ -2,9 +2,10 @@
 % gif command (hope it still works ...)
 % magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
 \PassOptionsToPackage{svgnames}{xcolor}
-\documentclass{beamer}
-\usepackage[T1]{fontenc} % or fontspec if lualatex is wanted ...
-\setbeamertemplate{navigation symbols}{}
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{papersize={128mm,96mm},margin=0.5cm} %\text
 \usepackage{tikzducks,tikzlings}
 \usetikzlibrary{patterns}
 \usepackage{bearwear}
@@ -22,27 +23,27 @@ yscale=-1,yshift=-240]
   (180.0000,250.0000);
 \end{scope}
 }}
+\input{finale-pic}
 \begin{document}%
-%Anteater . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-%done Bear . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-%done Bee . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-%done Cat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-%Coati . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-%done Hippo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
-%done duck
-%done Koala . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
-%done Marmot . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
-%done Mole . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
-%done Mouse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
-%done Owl . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
-%done Panda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
-%done Penguin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
-%done Pig . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
-%done Rhino . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
-%sheep
-%Sloth . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
-%done Squirrel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
-%Snowman . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+\foreach \x in  %{0,0.5,...,250}
+   %{0,0.5,...,80}
+   {0}
+ {%
+\noindent\begin{tikzpicture}
+\path (0,0) rectangle (\textwidth,\textheight);
+\coordinate (mycenter) at (0.5\textwidth,0.4\textheight);
+ \foreach \y in {0,45,90,135,180,225,270,315}%
+ {
+  \path[overlay] (mycenter) --+(\x+\y:1.85) pic { \y iduck };
+ }
+   \foreach \y in {0,30,...,330}%
+ {
+  \path[overlay] (mycenter) --+(\x+\y:3.5) pic { \y duck };
+ }
+ \path[overlay] (mycenter)--+(-0.5,0) pic {centerduck };
+ \end{tikzpicture}\newpage
+}
+\end{document}
 \makeatletter
 \tikzset{every picture/.style={scale=0.6}}
 \begin{frame}
@@ -108,9 +109,6 @@ yscale=-1,yshift=-240]
 \squirrel
 \begin{scope}
   \clip (0,1.75) circle[radius=0.3]  (0.2,1.6) circle[radius=0.15]  (-0.2,1.6) circle[radius=0.15];
-
-
-  %\fill[blue,opacity=0.8](-4,1.2) ellipse (4,1.4);
   \fill[xkcdElectricLime!80!white,opacity=0.8](0,1.6) ellipse [x radius=0.4, y radius=0.1];
 \end{scope}
 \end{tikzpicture}
@@ -118,10 +116,6 @@ yscale=-1,yshift=-240]
 \penguin
 \begin{scope}
   \clip (0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
-%	\clip	(0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
-%
-
-  %\fill[blue,opacity=0.8](-4,1.2) ellipse (4,1.4);
   \fill[xkcdMint!50!white,opacity=0.8](0,1.33) ellipse [x radius=0.7, y radius=0.20];
 \end{scope}
 \end{tikzpicture}
@@ -129,9 +123,6 @@ yscale=-1,yshift=-240]
 \owl
 \begin{scope}
   \clip (0,1.55) ellipse[x radius=0.7, y radius=0.55];
-%	\clip	(0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
-%
-
   \fill[yellow](-4,1.2) rectangle (4,1.4);
   \fill[pattern=crosshatch dots](-4,1.2) rectangle (4,1.4);
 \end{scope}
@@ -139,8 +130,7 @@ yscale=-1,yshift=-240]
 \begin{tikzpicture}
 \pig
 \begin{scope}
-	\clip	(0,1.64) ellipse[x radius=.5, y radius=.5];
-
+  \clip	(0,1.64) ellipse[x radius=.5, y radius=.5];
   \fill[pattern color=xkcdArmyGreen,pattern=crosshatch dots light steel blue](-3,1.4) rectangle (3,1.65);
 \end{scope}
 \end{tikzpicture}
@@ -255,7 +245,8 @@ yscale=-1,yshift=-240]
        \fill[mask!80!red] (-3,1.45) rectangle (3,1.65);
 \end{scope}
 \end{tikzpicture}
-\begin{tikzpicture}\bear\bearwear[shirt=white,t-shirt,body deco={\path (beartummy)--++(0.1,-0.1) pic[scale=0.04]{swisscross};}]
+\begin{tikzpicture}
+\bear\bearwear[shirt=white,t-shirt,body deco={\path (beartummy)--++(0.1,-0.1) pic[scale=0.04]{swisscross};}]
 \begin{scope}
 		\clip (0, 1.55) circle (0.5);
        \fill[mask!80!black] (-3,1.25) rectangle (3,1.6);
