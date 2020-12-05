@@ -4,6 +4,9 @@
 \PassOptionsToPackage{svgnames}{xcolor}
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\newfontfamily\notoemoji{Noto Color Emoji}[Renderer=HarfBuzz,Opacity=0.25]
+
 \usepackage{geometry}
 \geometry{papersize={128mm,96mm},margin=0.5cm} %\text
 \usepackage{tikzducks,tikzlings}
@@ -25,9 +28,16 @@ yscale=-1,yshift=-240]
 }}
 \input{finale-pic}
 \begin{document}%
-\foreach \x in  %{0,0.5,...,250}
+\AddToHook{shipout/background}{%
+ \put(0,-\paperheight){\textcolor{blue}{\rule{\paperwidth}{\paperheight}}}%
+ \put(0.5\paperwidth,-0.5\paperheight){%
+ \tikz[overlay]\shade[inner color=white,outer color=blue!50!white](0,0)circle[radius=0.7\textheight];%
+ \raisebox{-0.35\height}{\makebox[0pt]{\fontsize{1.4\textheight}{6cm}\selectfont\notoemoji^^^^^^01f30d}}%
+}}
+ 
+\foreach \x in  {0,0.5,...,250}
    %{0,0.5,...,80}
-   {0}
+   %{0}
  {%
 \noindent\begin{tikzpicture}
 \path (0,0) rectangle (\textwidth,\textheight);
