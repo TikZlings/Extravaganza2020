@@ -112,6 +112,14 @@
 
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
 
+## Two bees 
+
+- Topic: Dark stage, large bee in spotlight in the middle. A second bee appearing and disappearing in the background. 
+
+- Music: Hamlet monologue: https://youtu.be/Rzf3ArC0afc 0:00 - 0:23
+
+- Source Code: [./samcarter/bees/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/bess)
+
 # More Ideas
 
 
@@ -161,15 +169,6 @@ Music Uriah Heep Lady in black https://youtu.be/N0H48bpJziQ 0.00-0:27
 
 Background https://i.insider.com/5a20871af914c354018b7289?width=2400
 
-
-### Two bees 
-
-Dark stage, large bee in spotlight in the middle. A second bee
-appearing and disappearing in the background. 
-Copyright: thanks to C Marmot
-
-Hamlet monologue: https://youtu.be/Rzf3ArC0afc 0:00 - 0:23
-
 ### Tribute to Sir Sean Connery (1930-2020)
 
 Bond ducks (with bow ties), and mouse with microphone singing. Foto in
@@ -177,10 +176,6 @@ the background
 
 Music: nobody does it better https://youtu.be/7__rt0hRm8s 1:20-1:33
 
-### Grand Finale
 
-tikzlings with masks, UN-flags or flags from various countries
-
-Music we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
 
 
