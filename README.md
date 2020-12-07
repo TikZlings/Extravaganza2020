@@ -102,15 +102,17 @@
 
 - Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
 
-# Work in Progress
-
 ## Grand Finale
+
+<img align="right" src="./storyboard/previews/finale.png" height="100">
 
 - Topic: tikzlings with masks, UN-flags or flags from various countries
 
 - Music: we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
 
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
+
+# Work in Progress
 
 ## Two bees 
 
