@@ -1,0 +1,271 @@
+% !Mode:: "TeX:UTF-8:Main"
+% gif command (hope it still works ...)
+% magick -density 160 -delay 35 -loop 0 XXXX.pdf XXXX.gif
+\PassOptionsToPackage{svgnames}{xcolor}
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\newfontfamily\notoemoji{Noto Color Emoji}[Renderer=HarfBuzz,Opacity=0.25]
+
+\usepackage{geometry}
+\geometry{papersize={128mm,96mm},margin=0.5cm} %\text
+\usepackage{tikzducks,tikzlings}
+\usetikzlibrary{patterns}
+\usepackage{bearwear}
+\usepackage{xkcdcolors}
+\definecolor{mask}{RGB}{171,201,177}
+\definecolor{swissred}{RGB}{216,30,5}
+\tikzset{swisscross/.pic={
+\begin{scope}[y=0.80pt, x=0.80pt,
+yscale=-1,yshift=-240]
+%\path[fill=swissred,rounded corners=0.0000cm] (0.0000,0.0000) rectangle
+%  (300.0000,300.0000);
+\path[fill=swissred,rounded corners=0.0000cm] (50.0000,120.0000) rectangle
+  (250.0000,180.0000);
+\path[fill=swissred,rounded corners=0.0000cm] (120.0000,50.0000) rectangle
+  (180.0000,250.0000);
+\end{scope}
+}}
+\input{finale-pic}
+\begin{document}%
+%\AddToHook{shipout/background}{%
+% \put(0,-\paperheight){\textcolor{blue}{\rule{\paperwidth}{\paperheight}}}%
+% \put(0.5\paperwidth,-0.5\paperheight){%
+% \tikz[overlay]\shade[inner color=white,outer color=blue!50!white](0,0)circle[radius=0.7\textheight];%
+% \raisebox{-0.35\height}{\makebox[0pt]{\fontsize{1.4\textheight}{6cm}\selectfont\notoemoji^^^^^^01f30d}}%
+%}}
+
+\foreach \x in  %{0,0.5,...,250}
+   %{0,0.5,...,80}
+   {0}
+ {%
+\noindent\begin{tikzpicture}
+\path (0,0) rectangle (\textwidth,\textheight);
+\coordinate (mycenter) at (0.5\textwidth,0.4\textheight);
+ \foreach \y in {0,45,90,135,180,225,270,315}%
+ {
+  \path[overlay] (mycenter) --+(\x+\y:1.85) pic { \y iduck };
+ }
+   \foreach \y in {0,30,...,330}%
+ {
+  \path[overlay] (mycenter) --+(\x+\y:3.5) pic { \y duck };
+ }
+ \path[overlay] (mycenter)--+(-0.5,0) pic {centerduck };
+ \end{tikzpicture}\newpage
+}
+\end{document}
+\makeatletter
+\tikzset{every picture/.style={scale=0.6}}
+\begin{frame}
+\begin{tikzpicture}
+  \anteater
+  \begin{scope}
+  \clip  (0.33, 1.71) .. controls (0.16, 1.52) and (0.1, 1.5) .. (0.08, 1.05) .. controls (0.07, 1) and (-0.07, 1) .. (-0.08, 1.05) .. controls (-0.1, 1.5) and (-0.16, 1.52) .. (-0.33, 1.7) .. controls (-0.45, 1.85) and (-0.22, 2.05) .. (0, 2.05) .. controls (0.22, 2.05) and (0.45, 1.85) .. (0.33, 1.7) -- cycle;
+
+  \fill[xkcdMint!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.75)--(1,1)--cycle ;
+  \fill[pattern=crosshatch dots](-1,1)--(0,1.75)--(1,1)--cycle ;
+  \end{scope}
+  \begin{scope}
+  \clip
+  (0.3508, 1.739) .. controls (0.3508, 1.739) and (0.2861, 1.8489) .. (0.1571, 1.7664) .. controls (0.0279, 1.684) and (0.0627, 1.0524) .. (0.0627, 1.0524) .. controls (0.0627, 1.0524) and (0.131, 1.3772) .. (0.2314, 1.44) .. controls (0.3599, 1.5206) and (0.3508, 1.739) .. (0.3508, 1.739) -- cycle
+  (-0.3508, 1.739) .. controls (-0.3508, 1.739) and (-0.2861, 1.8489) .. (-0.1571, 1.7664) .. controls (-0.0279, 1.684) and (-0.0627, 1.0524) .. (-0.0627, 1.0524) .. controls (-0.0627, 1.0524) and (-0.131, 1.3772) .. (-0.2314, 1.44) .. controls (-0.3599, 1.5206) and (-0.3508, 1.739) .. (-0.3508, 1.739) -- cycle ;
+  %
+  \fill[xkcdMint!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.75)--(1,1)--cycle ;
+  \fill[pattern=crosshatch dots](-1,1)--(0,1.75)--(1,1)--cycle ;
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+  \sloth
+  \begin{scope}
+ \clip ( 0.40,1.67) .. controls ( 0.40,1.90) and ( 0.12,2.09) .. ( 0.00,1.93) .. controls (-0.12,2.09) and (-0.40,1.90) .. (-0.40,1.67) .. controls (-0.40,1.45) and (-0.25,1.38) .. ( 0.00,1.38) .. controls ( 0.25,1.38) and ( 0.40,1.45) .. ( 0.40,1.67) -- cycle;
+  \fill[xkcdLilac!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.75)--(1,1)--cycle ;
+  \fill[pattern=crosshatch dots](-1,1)--(0,1.75)--(1,1)--cycle ;
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+  \coati
+  \begin{scope}
+  \clip  (0.33, 1.71) .. controls (0.16, 1.52) and (0.1, 1.5) .. (0.08, 1.05) .. controls (0.07, 1) and (-0.07, 1) .. (-0.08, 1.05) .. controls (-0.1, 1.5) and (-0.16, 1.52) .. (-0.33, 1.7) .. controls (-0.45, 1.85) and (-0.22, 2.05) .. (0, 2.05) .. controls (0.22, 2.05) and (0.45, 1.85) .. (0.33, 1.7) -- cycle;
+
+  \fill[xkcdRed!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.65)--(1,1)--cycle ;
+  %\fill[pattern=grid](-1,1)--(0,1.65)--(1,1)--cycle ;
+  \end{scope}
+  \begin{scope}
+  \clip
+  (0.3508, 1.739) .. controls (0.3508, 1.739) and (0.2861, 1.8489) .. (0.1571, 1.7664) .. controls (0.0279, 1.684) and (0.0627, 1.0524) .. (0.0627, 1.0524) .. controls (0.0627, 1.0524) and (0.131, 1.3772) .. (0.2314, 1.44) .. controls (0.3599, 1.5206) and (0.3508, 1.739) .. (0.3508, 1.739) -- cycle
+  (-0.3508, 1.739) .. controls (-0.3508, 1.739) and (-0.2861, 1.8489) .. (-0.1571, 1.7664) .. controls (-0.0279, 1.684) and (-0.0627, 1.0524) .. (-0.0627, 1.0524) .. controls (-0.0627, 1.0524) and (-0.131, 1.3772) .. (-0.2314, 1.44) .. controls (-0.3599, 1.5206) and (-0.3508, 1.739) .. (-0.3508, 1.739) -- cycle ;
+
+  \fill[xkcdRed!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.65)--(1,1)--cycle ;
+  %\fill[pattern=north east lines](-1,1)--(0,1.65)--(1,1)--cycle ;
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+  \snowman
+  \begin{scope}
+		\clip (0,1.7) circle[radius=0.4];
+  \fill[orange!80!black,opacity=0.7] (-3,1.45) rectangle (3,1.7);
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+  \sheep
+  \begin{scope}
+  \clip (0.4, 1.8) .. controls (0.4, 1.5) and (0.2, 1.25) .. (0, 1.16) .. controls (-0.2, 1.25) and (-0.4, 1.5) .. (-0.4, 1.8) .. controls (-0.34, 2.3) and (0.34, 2.3) .. (0.4, 1.8) -- cycle;
+    \fill[xkcdCerulean!80!white,opacity=0.8,rounded corners] (-1,1)--(0,1.65)--(1,1)--cycle ;
+  \fill[pattern=crosshatch dots](-1,1)--(0,1.65)--(1,1)--cycle ;
+
+  \end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\squirrel
+\begin{scope}
+  \clip (0,1.75) circle[radius=0.3]  (0.2,1.6) circle[radius=0.15]  (-0.2,1.6) circle[radius=0.15];
+  \fill[xkcdElectricLime!80!white,opacity=0.8](0,1.6) ellipse [x radius=0.4, y radius=0.1];
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\penguin
+\begin{scope}
+  \clip (0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
+  \fill[xkcdMint!50!white,opacity=0.8](0,1.33) ellipse [x radius=0.7, y radius=0.20];
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\owl
+\begin{scope}
+  \clip (0,1.55) ellipse[x radius=0.7, y radius=0.55];
+  \fill[yellow](-4,1.2) rectangle (4,1.4);
+  \fill[pattern=crosshatch dots](-4,1.2) rectangle (4,1.4);
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\pig
+\begin{scope}
+  \clip	(0,1.64) ellipse[x radius=.5, y radius=.5];
+  \fill[pattern color=xkcdArmyGreen,pattern=crosshatch dots light steel blue](-3,1.4) rectangle (3,1.65);
+\end{scope}
+\end{tikzpicture}
+%
+%
+\begin{tikzpicture}
+\moles
+\begin{scope}
+	\clip	(0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
+
+  \fill[xkcdMint!60!white,opacity=0.9] (-3,1.4) rectangle (3,1.65);
+  \draw[pattern color=blue,pattern=horizontal lines](-3,1.4) rectangle (3,1.65);
+\end{scope}
+\end{tikzpicture}
+%
+%
+\begin{tikzpicture}
+\mouse
+\begin{scope}
+	\clip	(0.5, 1.8) .. controls (0.5, 1.58) and (0.2, 1.25) .. (0, 1.16) .. controls (-0.2, 1.25) and (-0.5, 1.58) .. (-0.5, 1.8) .. controls (-0.34, 2.3) and (0.34, 2.3) .. (0.5, 1.8) -- cycle;
+
+       \fill[xkcdBrightPink!60!white,opacity=0.9] (-3,1.2) rectangle (3,1.6);
+       \draw[pattern color=blue,pattern=dots](-3,1.2) rectangle (3,1.6);
+\end{scope}
+\end{tikzpicture}
+%%
+%%
+\begin{tikzpicture}
+\panda
+\begin{scope}
+		\clip   (0.4897, 1.5886) .. controls (0.4614, 1.8238) and (0.25, 2.1172) .. (0, 2.1134) .. controls (-0.25, 2.1172) and (-0.4614, 1.8238) .. (-0.4897, 1.5886) .. controls (-0.5261, 1.3269) and (-0.2748, 1.2377) .. (0, 1.2377) .. controls (0.2748, 1.2377) and (0.5261, 1.3269) .. (0.4897, 1.5886) -- cycle;
+
+       \fill[brown!60!white,opacity=0.8] (-3,1.4) rectangle (3,1.6);
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\marmot
+\begin{scope}
+		\clip   (0.595, 0.92) .. controls (0.595, 0.26) and (0.355, 0.18) .. (0, 0.18) .. controls (-0.355, 0.18) and (-0.595, 0.26) .. (-0.595, 0.92) .. controls (-0.605, 1.58) and (-0.335, 2.11) .. (0, 2.11) .. controls (0.335, 2.11) and (0.605, 1.58) .. (0.595, 0.92) -- cycle;
+
+       \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.3) rectangle (3,1.6);
+\end{scope}
+\end{tikzpicture}
+%
+\begin{tikzpicture}
+	\duck[]
+
+  \begin{pgfinterruptboundingbox}
+    \fill[cyan!10!white]  (1.4051,1.5586) .. controls (1.1370,1.3225) and (0.8775,1.2365) .. (0.5844,1.3462) .. controls (0.5190,1.3848) and (0.4601,1.4391) .. (0.3414,1.4100) .. controls (-0.1044,0.8610) and (1.0760,1.1140) .. (1.3547,1.2073) -- (1.3698,1.2679) .. controls (1.2783,1.2261) and (1.1035,1.2035) .. (0.9324,1.1895) -- (0.9600,1.2509) .. controls (1.1068,1.2809) and (1.2985,1.3700) .. (1.4071,1.4930) -- cycle;
+  \end{pgfinterruptboundingbox}
+
+  \duck[scale=0.05, shift={(6,22.3)}]
+  \duck[scale=0.05, shift={(7.8,24.8)}]
+  \duck[scale=0.05, shift={(10,22)}]
+  \duck[scale=0.05, shift={(12.5,23.5)}]
+  \duck[scale=0.05, shift={(15,22)}]
+
+\end{tikzpicture}	
+%
+%
+\begin{tikzpicture}
+\koala
+\begin{scope}
+		\clip   (-0.1,2.1) to[out=180,in=140,looseness=1.2] (-0.4,1.5) to[out=-110,in=180,looseness=1.2] (-0.1,0.15) to[out=00,in=-65,looseness=1.2] (0.4,1.5) to[out=40,in=0,looseness=1.2] cycle;
+
+       \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.3) rectangle (3,1.6);
+\end{scope}
+\end{tikzpicture}
+%\begin{tikzpicture}
+%\anteater
+%%\begin{scope}
+%%		\clip (0, 1.55) ellipse[x radius=0.42, y radius=0.2];
+%%       \fill[mask!80!red] (-3,1.45) rectangle (3,1.65);
+%%\end{scope}
+%\end{tikzpicture}
+%
+%\begin{tikzpicture}
+%\coati
+%\begin{scope}
+%		\clip   (0,2.1) to[out=180,in=140,looseness=1.2] (-0.3,1.5) to[out=-110,in=180,looseness=1.2] (0,0.15) to[out=00,in=-65,looseness=1.2] (0.3,1.5) to[out=40,in=0,looseness=1.2] cycle;
+%
+%       \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.5) rectangle (3,1.7);
+%\end{scope}
+%\end{tikzpicture}
+\begin{tikzpicture}
+\cat
+\begin{scope}
+		\clip   (0,2.1) to[out=180,in=140,looseness=1.2] (-0.3,1.5) to[out=-110,in=180,looseness=1.2] (0,0.15) to[out=00,in=-65,looseness=1.2] (0.3,1.5) to[out=40,in=0,looseness=1.2] cycle;
+
+       \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.5) rectangle (3,1.7);
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\bee
+\begin{scope}
+		\clip   (0,2.1) to[out=180,in=140,looseness=1.2] (-0.3,1.5) to[out=-110,in=180,looseness=1.2] (0,0.15) to[out=00,in=-65,looseness=1.2] (0.3,1.5) to[out=40,in=0,looseness=1.2] cycle;
+
+       \fill[blue!20!cyan!30!white,opacity=0.8] (-3,1.5) rectangle (3,1.7);
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\rhino
+\begin{scope}
+		\clip (0, 1.55) ellipse[x radius=0.42, y radius=0.2];
+       \fill[mask!80!red] (-3,1.45) rectangle (3,1.65);
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\hippo
+\begin{scope}
+		\clip (0, 1.55) ellipse[x radius=0.42, y radius=0.2];
+       \fill[mask!80!red] (-3,1.45) rectangle (3,1.65);
+\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}
+\bear\bearwear[shirt=white,t-shirt,body deco={\path (beartummy)--++(0.1,-0.1) pic[scale=0.04]{swisscross};}]
+\begin{scope}
+		\clip (0, 1.55) circle (0.5);
+       \fill[mask!80!black] (-3,1.25) rectangle (3,1.6);
+\end{scope}
+\draw[\bear@body!70!white!80!red] (0, 1.5) ellipse (0.15 and 0.08);
+\draw[\bear@body!30!black,line width=0.4pt] (0.145, 1.38) arc [start angle=-20, end angle=-160, radius=0.16];
+%
+%\path (0,0) pic{swisscross};
+\end{tikzpicture}
+
+\end{frame}
+\end{document} 
