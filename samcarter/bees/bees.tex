@@ -1,0 +1,63 @@
+\documentclass{beamer}
+
+\usepackage{tikzlings}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{background canvas}{%
+\begin{tikzpicture}[overlay, remember picture]
+%	\node at (current page.center){\includegraphics[page=1,width=1.001\paperwidth]{walkuere}};
+\end{tikzpicture}
+}
+
+\begin{document}
+
+\foreach \x in {0,1,...,30}{
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\begin{scope}[xscale=-1]
+		\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\end{scope}
+\end{tikzpicture}
+\end{frame}
+}
+
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\foreach \x in {7.5,7.6,...,14.5}{
+		\node<+> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\begin{scope}[xscale=-1]
+			\node<.> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\end{scope}
+	}
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+test
+\end{frame}
+
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\foreach \x in {14.5,14.4,...,7.5}{
+		\node<+> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\begin{scope}[xscale=-1]
+			\node<.> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\end{scope}
+	}
+\end{tikzpicture}
+\end{frame}
+
+\foreach \x in {0,1,...,30}{
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\begin{scope}[xscale=-1]
+		\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\end{scope}
+\end{tikzpicture}
+\end{frame}
+}
+
+
+\end{document}
