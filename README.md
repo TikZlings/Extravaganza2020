@@ -102,6 +102,16 @@
 
 - Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
 
+## Two bees 
+
+<img align="right" src="./storyboard/previews/bees.png" height="100">
+
+- Topic: Dark stage, large bee in spotlight in the middle. A second bee appearing and disappearing in the background. 
+
+- Music: Hamlet monologue: https://youtu.be/Rzf3ArC0afc 0:00 - 0:23
+
+- Source Code: [./samcarter/bees/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/bess)
+
 ## Grand Finale
 
 <img align="right" src="./storyboard/previews/finale.png" height="100">
@@ -113,14 +123,6 @@
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
 
 # Work in Progress
-
-## Two bees 
-
-- Topic: Dark stage, large bee in spotlight in the middle. A second bee appearing and disappearing in the background. 
-
-- Music: Hamlet monologue: https://youtu.be/Rzf3ArC0afc 0:00 - 0:23
-
-- Source Code: [./samcarter/bees/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/bess)
 
 # More Ideas
 
