@@ -124,6 +124,16 @@
 
 # Work in Progress
 
+### Down under
+
+- Koala with hat & guitar before an eukalyptus tree
+
+- Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
+
+- Source Code: [./ulrike/downunder](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/downunder)
+
+example background https://c1.staticflickr.com/5/4086/5070905455_fb01ef858b_b.jpg
+
 # More Ideas
 
 
@@ -157,13 +167,7 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 
 (see also scan for setup)
 
-### Down under
 
-Koala with hat & guitar before an eukalyptus tree
-
-Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
-
-example background https://c1.staticflickr.com/5/4086/5070905455_fb01ef858b_b.jpg
 
 ### Tribute to ken hensley 
 
