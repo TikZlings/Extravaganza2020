@@ -2,13 +2,18 @@
 
 \usepackage{tikzlings}
 
+\newsavebox\Beeblebox
+\sbox\Beeblebox{\begin{tikzpicture}[transparency group]
+\bee
+\end{tikzpicture}}
+
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{background canvas}{%
 \begin{tikzpicture}[overlay, remember picture]
   \fill[black] (current page.north east) rectangle (current page.south west);
 	\node at (current page.center){\includegraphics[width=\paperwidth]{lights}};
   \begin{scope}[xshift=3.8cm,yshift=-5.5cm+0.5cm*cos(\thepage)]
-    \node at (0,0) {\tikz{\begin{scope}[transparency group,opacity=cos(\thepage)*cos(\thepage)] \bee  \end{scope}}};  
+    \node[opacity=cos(\thepage)*cos(\thepage)] at (0,0) {\usebox\Beeblebox};  
   \end{scope}
   \bee[xshift=8.5cm,yshift=-8cm+0.5cm*sin(\thepage)]
   \begin{scope}[xshift=8.5cm,yshift=-8cm+0.5cm*sin(\thepage)]
