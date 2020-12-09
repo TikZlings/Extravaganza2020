@@ -102,6 +102,16 @@
 
 - Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
 
+## Two bees 
+
+<img align="right" src="./storyboard/previews/bees.png" height="100">
+
+- Topic: Dark stage, large bee in spotlight in the middle. A second bee appearing and disappearing in the background. 
+
+- Music: Hamlet monologue: https://youtu.be/Rzf3ArC0afc 0:00 - 0:23
+
+- Source Code: [./samcarter/bees/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/bess)
+
 ## Grand Finale
 
 <img align="right" src="./storyboard/previews/finale.png" height="100">
@@ -114,13 +124,15 @@
 
 # Work in Progress
 
-## Two bees 
+### Down under
 
-- Topic: Dark stage, large bee in spotlight in the middle. A second bee appearing and disappearing in the background. 
+- Koala with hat & guitar before an eukalyptus tree
 
-- Music: Hamlet monologue: https://youtu.be/Rzf3ArC0afc 0:00 - 0:23
+- Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
 
-- Source Code: [./samcarter/bees/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/bess)
+- Source Code: [./ulrike/downunder](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/downunder)
+
+example background https://c1.staticflickr.com/5/4086/5070905455_fb01ef858b_b.jpg
 
 # More Ideas
 
@@ -155,13 +167,7 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
 
 (see also scan for setup)
 
-### Down under
 
-Koala with hat & guitar before an eukalyptus tree
-
-Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
-
-example background https://c1.staticflickr.com/5/4086/5070905455_fb01ef858b_b.jpg
 
 ### Tribute to ken hensley 
 

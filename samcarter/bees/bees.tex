@@ -1,0 +1,85 @@
+\documentclass{beamer}
+
+\usepackage{tikzlings}
+
+\newsavebox\Beeblebox
+\sbox\Beeblebox{\begin{tikzpicture}[transparency group]
+\bee
+\end{tikzpicture}}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{background canvas}{%
+\begin{tikzpicture}[overlay, remember picture]
+  \fill[black] (current page.north east) rectangle (current page.south west);
+	\node at (current page.center){\includegraphics[width=\paperwidth]{lights}};
+  \begin{scope}[xshift=3.8cm,yshift=-5.5cm+0.5cm*cos(\thepage)]
+    \node[opacity=cos(\thepage)*cos(\thepage)] at (0,0) {\usebox\Beeblebox};  
+  \end{scope}
+  \bee[xshift=8.5cm,yshift=-8cm+0.5cm*sin(\thepage)]
+  \begin{scope}[xshift=8.5cm,yshift=-8cm+0.5cm*sin(\thepage)]
+    \begin{scope}[scale=0.5,xshift=10]
+      \fill[white!90!brown] (0,1.7) circle [radius=0.4];
+      \fill[black] (-0.15,1.8) circle[radius=0.05]; 
+      \fill[black] (0.15,1.8) circle[radius=0.05]; 
+      \draw[black,line width=0.4pt] (0.115, 1.6) arc [start angle=-40, end angle=-140, radius=0.16];
+      \fill[white!90!brown,rotate around={15:(-0.175,2.115)}] (-0.2,1.93) rectangle (-0.15,2.3);
+      \fill[white!90!brown,rotate around={-15:(0.175,2.115)}] (0.2,1.93) rectangle (0.15,2.3);
+      \fill[white!90!brown] (-0.22,2.30) circle[radius=0.07];
+      \fill[white!90!brown] (0.22,2.30) circle[radius=0.07];
+    \end{scope}
+  \end{scope}  
+\end{tikzpicture}
+}
+
+\begin{document}
+
+\foreach \x in {0,1,...,30}{
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\begin{scope}[xscale=-1]
+		\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\end{scope}
+\end{tikzpicture}
+\end{frame}
+}
+
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\foreach \x in {7.5,7.6,...,14.5}{
+		\node<+> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\begin{scope}[xscale=-1]
+			\node<.> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\end{scope}
+	}
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+\pause[310]
+\end{frame}
+
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\foreach \x in {14.5,14.4,...,7.5}{
+		\node<+> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\begin{scope}[xscale=-1]
+			\node<.> at ([xshift=\x cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+		\end{scope}
+	}
+\end{tikzpicture}
+\end{frame}
+
+\foreach \x in {0,1,...,30}{
+\begin{frame}
+\begin{tikzpicture}[overlay,remember picture]
+	\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\begin{scope}[xscale=-1]
+		\node at ([xshift=7.5cm]current page.center){\includegraphics[height=\paperheight]{vorhang}};
+	\end{scope}
+\end{tikzpicture}
+\end{frame}
+}
+
+
+\end{document}
