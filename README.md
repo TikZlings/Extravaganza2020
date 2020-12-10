@@ -126,6 +126,8 @@
 
 ### Down under
 
+<img align="right" src="./storyboard/previews/downunder.png" height="100">
+
 - Koala with hat & guitar before an eukalyptus tree
 
 - Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
