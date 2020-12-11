@@ -1,6 +1,12 @@
 % !Mode:: "TeX:UTF-8:Main"
 % more or less right speed:
 % magick -density 160 -delay 90 -loop 0 XXXX.pdf XXXX.gif
+
+% delay 90 => 100/90 FPS
+% Needed: 25 FPS
+% => increase number of pages by 25/(100/90) = 22.5
+% => show each page 22 times
+
 \documentclass{beamer}
 \usepackage{pgffor}
 \setbeamertemplate{background canvas}{
@@ -9,18 +15,19 @@
 \setbeamertemplate{navigation symbols}{}
 
 \begin{document}
-\foreach\x in {1,2}
-{
+\foreach\z in {1,...,14}{
+\foreach \y in {1,...,22}{
 \begin{frame}
 \vspace*{5.4cm}
 \mbox{}\hfill
  \includegraphics[page=1]{downunder-koala}\hspace*{3cm}
-\end{frame}	
+\end{frame}}
+\foreach \y in {1,...,22}{
 \begin{frame}
 \vspace*{5.5cm}
 \mbox{}\hfill
  \includegraphics[page=2]{downunder-koala}\hspace*{3cm}
-\end{frame}	
+\end{frame}}
 }
 \end{document}
 

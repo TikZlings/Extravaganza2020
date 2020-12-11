@@ -11,4 +11,5 @@ cp ../samcarter/lochness/lochness.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
 cp ../samcarter/baaaaa/baaaaa.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 cp ../samcarter/bees/bees.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 cp ../paulo/xcoffins/xcoffins.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
+cp ../ulrike/downunder/downunder.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 cp ../ulrike/finale/finale.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;   

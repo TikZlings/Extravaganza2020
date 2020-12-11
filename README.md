@@ -112,6 +112,16 @@
 
 - Source Code: [./samcarter/bees/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/bess)
 
+### Down under
+
+<img align="right" src="./storyboard/previews/downunder.png" height="100">
+
+- Koala with hat & guitar before an eukalyptus tree
+
+- Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
+
+- Source Code: [./ulrike/downunder](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/downunder)
+
 ## Grand Finale
 
 <img align="right" src="./storyboard/previews/finale.png" height="100">
@@ -123,18 +133,6 @@
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
 
 # Work in Progress
-
-### Down under
-
-<img align="right" src="./storyboard/previews/downunder.png" height="100">
-
-- Koala with hat & guitar before an eukalyptus tree
-
-- Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
-
-- Source Code: [./ulrike/downunder](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/downunder)
-
-example background https://c1.staticflickr.com/5/4086/5070905455_fb01ef858b_b.jpg
 
 # More Ideas
 
