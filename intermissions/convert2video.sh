@@ -3,9 +3,8 @@
 convert2video(){
 
     # compiling
-    pdflatex --jobname=extravaganza-intermission-$1 "\def\mytitle{"$2"}\input{extravaganza-intermission}"
-    pdflatex --jobname=extravaganza-intermission-$1 "\def\mytitle{"$2"}\input{extravaganza-intermission}"
-
+    latexmk -jobname=extravaganza-intermission-$1 -pretex="\def\mytitle{$2}" -usepretex extravaganza-intermission
+    
     # clean up old video
     rm $1.mp4
 
@@ -30,6 +29,7 @@ rm *.nav
 rm *.snm
 rm *.toc
 rm *.out
-rm *-repeat.pdf
 rm *.png
 rm *_raw.mp4
+rm *.fdb_latexmk
+rm *.fls
