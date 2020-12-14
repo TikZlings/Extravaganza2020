@@ -1,0 +1,20 @@
+\documentclass{beamer}
+
+\usepackage[osf]{AlegreyaSans}
+\usepackage{tikz}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{background canvas}{\includegraphics[width=\paperwidth]{extravaganza-intermission-background}}
+
+\ifundef{\mytitle}{\def\mytitle{placeholder}}{}
+
+\begin{document}
+\foreach \x in {1,...,50}{
+\begin{frame}
+\begin{tikzpicture}[remember picture, overlay]
+  \node[font=\bfseries\Huge\sffamily\scshape,text width=7.5cm,align=center] at ([yshift=-2cm]current page.center) {\mytitle};
+
+\end{tikzpicture}
+\end{frame}
+}
+\end{document}
