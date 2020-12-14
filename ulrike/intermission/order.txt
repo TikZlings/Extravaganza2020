@@ -1,0 +1,58 @@
+1. extravaganza-intermission-1-bobbles.tex
+Christmas Outing (bobbles, ulrike)
+
+2. ?
+extravaganza-intermission-2-connery.tex
+ (connery, plergux)
+
+3.
+extravaganza-intermission-3-bear.tex
+Bär Necessity (honey, ulrike)
+
+4.
+extravaganza-intermission-4-language.tex
+Language lesson (baaaaa, samcarter)
+
+5.
+extravaganza-intermission-5-lochness
+Amazing Ducks (lochness, samcarter)
+
+6.
+extravaganza-intermission-6-venice.tex
+A night in venice (venice, samcarter)
+
+7.
+extravaganza-intermission-7-hug.tex
+Hug the World (hug-the-world, paulo)
+
+8.
+extravaganza-intermission-8-art.tex
+TikzArt, yet again (arts, samcarter)
+
+9.
+extravaganza-intermission-9-bees.tex
+Two Bees (bees, samcarter)
+
+10.
+extravaganza-intermission-10-downunder.tex
+Down under (ulrike)
+
+11.
+extravaganza-intermission-11-zoom.tex
+Modern Times (zoom, paulo)
+
+12.
+extravaganza-intermission-12-xcoffins.tex
+For Insiders Only (xcoffin, paulo)
+
+13.
+extravaganza-intermission-13-queen.tex
+Magic Flute (queen, ulrike)
+
+14.
+extravaganza-intermission-14-vampir.tex
+Sinister (vampir, SamCarter)
+
+15.
+extravaganza-intermission-15-finale.tex
+Grand Finale (finale, ulrike)
