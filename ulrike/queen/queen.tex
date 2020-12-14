@@ -1,0 +1,44 @@
+% !Mode:: "TeX:UTF-8:Main"
+\documentclass{beamer}
+\usepackage{pgffor}
+\setbeamertemplate{background canvas}{}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{tikzlings}
+\usetikzlibrary{backgrounds}
+\pagecolor{blue!10!black}
+\pgfmathsetseed{\number\pdfrandomseed}
+
+\def\xmin{-30}
+\def\xmax{1.1\paperwidth}
+\def\ymin{0}
+\def\ymax{1.1\paperheight}
+
+\begin{document}
+\foreach\x in {1,2,...,50}{%
+\begin{frame}
+\begin{tikzpicture}[overlay,show background rectangle]
+\foreach \i in {0,...,200}{
+
+	\pgfmathsetmacro{\x}{rnd}%
+	\pgfmathsetmacro{\y}{rnd}%
+	\pgfmathsetmacro{\s}{rnd}%
+
+	\fill[white!90!yellow] ({\x*(\xmax-\xmin)+\xmin},{\y*(\ymax-\ymin)}) circle (0.017);
+
+}
+\end{tikzpicture}%
+\begin{tikzpicture}%[show background rectangle]
+\begin{scope}[scale=1.3,shift={(-3,-1)}]
+\hippo[crown=orange!50!yellow]
+ \ifodd\value{page}
+   \fill[draw=brown!30!black,fill=brown,line width=0.4pt] (0.125, 1.5) arc [start angle=-50, end angle=-130, radius=0.2] -- cycle;
+   \fi
+\end{scope}
+\fill[yellow,rotate=-120]
+  (0,0) node (B) {} to[out=-30,in=30]
+  (0,-8) node (A) {} to[out=0,in=0,looseness=1.7]
+  (0,0);
+\end{tikzpicture}
+\end{frame}}
+\end{document}
