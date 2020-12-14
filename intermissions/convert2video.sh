@@ -3,10 +3,7 @@
 convert2video(){
 
     # compiling
-    # latexmk -jobname=extravaganza-intermission-$1 -pretex="\def\mytitle{$2}" -usepretex extravaganza-intermission
-
-    pdflatex --jobname=extravaganza-intermission-$1 "\def\mytitle{"$2"}\input{extravaganza-intermission}"
-    pdflatex --jobname=extravaganza-intermission-$1 "\def\mytitle{"$2"}\input{extravaganza-intermission}"
+    latexmk -jobname=extravaganza-intermission-$1 -pretex="\def\mytitle{$2}" -usepretex extravaganza-intermission
     
     # clean up old video
     rm $1.mp4
@@ -29,6 +26,8 @@ convert2video(){
     rm extravaganza-intermission-$1.snm
     rm extravaganza-intermission-$1.toc
     rm extravaganza-intermission-$1.out
+    rm extravaganza-intermission-$1.fls
+    rm extravaganza-intermission-$1.fdb_latexmk
 
 }
 
