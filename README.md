@@ -128,7 +128,7 @@
 
 - tikzling in a moon crescent under stars singing the aria of queen of the night from the Zauberflöte
 
-- Music: The Magic Flute – Queen of the Night aria (Mozart; Diana Damrau, The Royal Opera) https://www.youtube.com/watch?v=YuBeBjqKSGQ&list=RD6rnTaAYYK78&index=2
+- Music: The Magic Flute – Queen of the Night https://youtu.be/xpI4uxcfY-4 0.57 - 1.15"
 
 - Source Code: [./ulrike/queen](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/queen)
 
