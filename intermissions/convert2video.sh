@@ -32,7 +32,17 @@ convert2video(){
 }
 
 # Converting
-convert2video venice "A night in venice"
-convert2video baaaa "Baaaaaaaaa"
-
-
+convert2video bobbles "Christmas Outing"
+convert2video bear "Bär Necessity"
+convert2video baaa "Language Lesson"
+convert2video lochness "Amazing Ducks"
+convert2video venice "A Night in Venice"
+convert2video hug "Hug the World"
+convert2video arts "Tik\textit{Z}Art, yet again"
+#convert2video bees "Two Bees \\ or \\ Not Two Bees \par \normalsize\raggedleft Thanks to Marmot! \tikz[scale=0.3]\marmot;"
+convert2video downunder "Down Under"
+convert2video zoom "Modern Times"
+convert2video xcoffins "For Insiders Only"
+convert2video queen "The Magic Flute"
+convert2video vampire "Sinister"
+convert2video finale "Grand Finale"
