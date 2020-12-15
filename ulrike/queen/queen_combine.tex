@@ -1,0 +1,18 @@
+\documentclass{beamer}
+
+\setbeamertemplate{navigations symbols}{}
+\usepackage{pgffor,tikz}
+
+\begin{document}
+
+\foreach \x in {1,...,50}{
+  \foreach \y in {1,...,14}{
+    \begin{frame}
+      \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,page=\x]{queen}};
+      \end{tikzpicture}
+    \end{frame}
+  }
+}
+
+\end{document}

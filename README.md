@@ -122,6 +122,16 @@
 
 - Source Code: [./ulrike/downunder](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/downunder)
 
+## Queen of the Night
+
+<img align="right" src="./storyboard/previews/queen.png" height="100">
+
+- tikzling in a moon crescent under stars singing the aria of queen of the night from the Zauberflöte
+
+- Music: The Magic Flute – Queen of the Night https://youtu.be/xpI4uxcfY-4 0.57 - 1.15"
+
+- Source Code: [./ulrike/queen](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/queen)
+
 ## Grand Finale
 
 <img align="right" src="./storyboard/previews/finale.png" height="100">

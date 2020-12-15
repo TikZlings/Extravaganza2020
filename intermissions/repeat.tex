@@ -1,0 +1,15 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{background canvas}{}
+
+\usepackage{pdfpages,tikz}
+
+\ifundef{\myrepeat}{\def\myrepeat{50}}{}
+
+\begin{document}
+
+\foreach \x in {1,...,\myrepeat}{
+	\includepdf{\filename}
+}
+
+\end{document}
