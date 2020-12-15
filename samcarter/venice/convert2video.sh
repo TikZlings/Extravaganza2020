@@ -7,7 +7,7 @@ convert -density 240 venice.pdf venice.png
 # convert to video
 ffmpeg  -ss 00:00:00 -i venice-%d.png \
         -ss 00:00:50 -i Barcarolle.m4a -shortest \
-        -filter:a "volume=10" \
+        -filter:a "volume=15" \
         venice_raw.mp4
 
 # repair video
