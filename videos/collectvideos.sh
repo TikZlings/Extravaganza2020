@@ -37,6 +37,7 @@ cp ../intermissions/credits.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
 
 for number in {1..29}
 do
+rm "$number".avi
 ffmpeg -i "$number".mp4 "$number".avi
 done
 
