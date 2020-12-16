@@ -1,16 +1,14 @@
 # Extravanganza 2020
 
-# Done
+## Christmas outing
 
-## A night in venice
+<img align="right" src="./storyboard/previews/bobble.png" height="100">
 
-<img align="right" src="./storyboard/previews/venice.png" height="100">
+- Topic: TikZlings with bobble hats, one large, 6 smaller
 
-- Topic: TikZlings in a Gondola 
+- Music: https://youtu.be/12gsCREkIn0  Tannenbaum 0:55 - 1:15
 
-- Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32 https://www.youtube.com/watch?v=KEiZ-J97O5A
-
-- Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
+- Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
 
 ## Bär necessity 
 
@@ -22,55 +20,15 @@
 
 - Source code: [./ulrike/honey/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/honey)
 
-## Zoom Meeting
+## Baaaaa
 
-<img align="right" src="./storyboard/previews/tikzlings-meeting.png" height="100">
+<img align="right" src="./storyboard/previews/baaaaa.png" height="100">
 
-- Topic: TikZlings in a Zoom meeting window, with the anteater bloke presenting the _theory of the sheep_
+- Topic: Sheep sounds in many different languages
 
-- Music: https://www.youtube.com/watch?v=_m47nceKkx4 (previous soundtrack was removed by YT)
+- "Music": https://www.youtube.com/watch?v=D5bjo4rMOAU
 
-- Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
-
-## TikZArt
-
-<img align="right" src="./storyboard/previews/art.png" height="100">
-
-- Topic: TikZling visits a museum
-
-- Music: https://www.youtube.com/watch?v=uJ2e7jSutrA (better suggestions are welcome - I'm really not the music expert....)
-
-- Source code: [./samcarter/art/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/art)
-
-## Hug the world 
-
-<img align="right" src="./storyboard/previews/hug-the-world.png" height="100">
-
-- Topic: Ducks hugging all sort things/beings
-
-- Music: https://www.youtube.com/watch?v=IUOVqNY64To
-
-- Source Code: [./paulo/hug-the-world/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/hug-the-world)
-
-## Dance of the Vampires
-
-<img align="right" src="./storyboard/previews/vampires.png" height="100">
-
-- Topic: vampires
-
-- Music: https://www.youtube.com/watch?v=qrVTNmimDp0
-
-- Source Code: [./samcarter/vampires/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/vampires)
-
-## Christmas outing
-
-<img align="right" src="./storyboard/previews/bobble.png" height="100">
-
-- Topic: TikZlings with bobble hats, one large, 6 smaller
-
-- Music: https://youtu.be/12gsCREkIn0  Tannenbaum 0:55 - 1:15
-
-- Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
+- Source Code: [./samcarter/baaaaa/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/baaaaa)
 
 ## Amazing ducks
 
@@ -82,25 +40,35 @@
 
 - Source Code: [./samcarter/lochness/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/lochness)
 
-## Baaaaa
+## A night in venice
 
-<img align="right" src="./storyboard/previews/baaaaa.png" height="100">
+<img align="right" src="./storyboard/previews/venice.png" height="100">
 
-- Topic: Sheep sounds in many different languages
+- Topic: TikZlings in a Gondola 
 
-- "Music": https://www.youtube.com/watch?v=D5bjo4rMOAU
+- Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32 https://www.youtube.com/watch?v=KEiZ-J97O5A
 
-- Source Code: [./samcarter/baaaaa/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/baaaaa)
+- Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
 
-## xcoffins
+## Hug the world 
 
-<img align="right" src="./storyboard/previews/xcoffins.png" height="100">
+<img align="right" src="./storyboard/previews/hug-the-world.png" height="100">
 
-- Topic: Dancing duck pallbearers
+- Topic: Ducks hugging all sort things/beings
 
-- Music: Astronomia https://www.youtube.com/watch?v=iLBBRuVDOo4
+- Music: https://www.youtube.com/watch?v=IUOVqNY64To
 
-- Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
+- Source Code: [./paulo/hug-the-world/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/hug-the-world)
+
+## TikZArt
+
+<img align="right" src="./storyboard/previews/art.png" height="100">
+
+- Topic: TikZling visits a museum
+
+- Music: https://www.youtube.com/watch?v=uJ2e7jSutrA (better suggestions are welcome - I'm really not the music expert....)
+
+- Source code: [./samcarter/art/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/art)
 
 ## Two bees 
 
@@ -122,6 +90,26 @@
 
 - Source Code: [./ulrike/downunder](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/downunder)
 
+## Zoom Meeting
+
+<img align="right" src="./storyboard/previews/tikzlings-meeting.png" height="100">
+
+- Topic: TikZlings in a Zoom meeting window, with the anteater bloke presenting the _theory of the sheep_
+
+- Music: https://www.youtube.com/watch?v=_m47nceKkx4 (previous soundtrack was removed by YT)
+
+- Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
+
+## xcoffins
+
+<img align="right" src="./storyboard/previews/xcoffins.png" height="100">
+
+- Topic: Dancing duck pallbearers
+
+- Music: Astronomia https://www.youtube.com/watch?v=iLBBRuVDOo4
+
+- Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
+
 ## Queen of the Night
 
 <img align="right" src="./storyboard/previews/queen.png" height="100">
@@ -131,6 +119,16 @@
 - Music: The Magic Flute – Queen of the Night https://youtu.be/xpI4uxcfY-4 0.57 - 1.15"
 
 - Source Code: [./ulrike/queen](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/queen)
+
+## Dance of the Vampires
+
+<img align="right" src="./storyboard/previews/vampires.png" height="100">
+
+- Topic: vampires
+
+- Music: https://www.youtube.com/watch?v=qrVTNmimDp0
+
+- Source Code: [./samcarter/vampires/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/vampires)
 
 ## Grand Finale
 
@@ -142,7 +140,8 @@
 
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
 
-# Work in Progress
+
+
 
 # More Ideas
 
