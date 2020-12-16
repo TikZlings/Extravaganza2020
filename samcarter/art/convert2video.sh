@@ -5,7 +5,7 @@ rm art.mp4
 convert -density 240 art.pdf art.png
 
 # convert to video
-ffmpeg -ss 00:00:00 -i art-%d.png -ss 00:00:00 -i VermeerandMusic.m4a -shortest art_raw.mp4
+ffmpeg  -ss 00:00:00 -i art-%d.png -ss 00:00:00 -i VermeerandMusic.m4a -shortest -filter:a "volume=15" art_raw.mp4
 
 # repair video
 HandBrakeCLI --crop 0:0:0:0  -i art_raw.mp4 -o art.mp4

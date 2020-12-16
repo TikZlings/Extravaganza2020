@@ -39,7 +39,7 @@ convert2video(){
 # Params:
 # 1: jobname
 # 2: path and name to the pdf file
-# 3: number of repetitions [default 50]
+# 3: number of repetitions [default 75]
 repeatconvert(){
 
     # compiling
@@ -88,5 +88,5 @@ convert2video vampire "Sinister"
 convert2video finale "Grand Finale"
 
 
-repeatconvert title "../ulrike/intermission/extravaganza-titlepage.pdf" 225
-repeatconvert credits "../ulrike/intermission/extravaganza-2020-credits.pdf" 150
+repeatconvert title "../ulrike/intermission/extravaganza-titlepage.pdf" 100
+repeatconvert credits "../ulrike/intermission/extravaganza-2020-credits.pdf" 175
