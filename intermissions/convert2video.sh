@@ -79,7 +79,7 @@ convert2video lochness "Amazing Ducks"
 convert2video venice "A Night in Venice"
 convert2video hug "Hug the World"
 convert2video arts "Tik\textit{Z}Art, yet again"
-convert2video bees "Two Bees \linebreak or \linebreak Not Two Bees \par \normalsize\hfill \makebox[2.8cm][l]{Thanks to Marmot! \tikz[scale=0.3]\marmot;}"
+convert2video bees "Two Bees \linebreak or \linebreak Not Two Bees \par \normalsize\hfill \makebox[2.8cm][l]{Thanks\enspace to\enspace Marmot!\enspace \tikz[scale=0.3]\marmot;}"
 convert2video downunder "Down Under"
 convert2video zoom "Modern Times"
 convert2video xcoffins "For Insiders Only"
@@ -90,3 +90,4 @@ convert2video finale "Grand Finale"
 
 repeatconvert title "../ulrike/intermission/extravaganza-titlepage.pdf" 100
 repeatconvert credits "../ulrike/intermission/extravaganza-2020-credits.pdf" 175
+
