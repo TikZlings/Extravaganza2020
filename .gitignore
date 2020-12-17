@@ -42,6 +42,7 @@ CombineVideos/*.mp4
 *.m4a
 *.mp3
 *.mp4
+*.avi
 !storyboard/*.pdf
 !storyboard/previews/*.png
 !samcarter/*/*.pdf

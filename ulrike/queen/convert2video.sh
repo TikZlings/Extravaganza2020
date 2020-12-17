@@ -5,7 +5,7 @@ rm queen.mp4
 convert -density 240 queen_combine.pdf queen.png
 
 # convert to video
-ffmpeg -ss 00:00:00 -i queen-%d.png -ss 00:00:55 -i EddaMoser.m4a -shortest queen_raw.mp4
+ffmpeg -ss 00:00:00 -i queen-%d.png -ss 00:00:55 -i EddaMoser.m4a -shortest -filter:a "volume=10" queen_raw.mp4
 
 # repair video
 HandBrakeCLI --crop 0:0:0:0  -i queen_raw.mp4 -o queen.mp4

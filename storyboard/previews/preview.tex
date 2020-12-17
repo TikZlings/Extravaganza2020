@@ -1,0 +1,35 @@
+% !TeX document-id = {397f8677-beac-46ca-977f-14e8c12717a2}
+% !TeX TS-program = latexmk % | convert -delay 100 -loop 0 -density 100 -alpha remove %.pdf %.gif
+
+
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{background canvas}{}
+
+
+\newcommand{\preview}[1]{
+  \setbeamertemplate{background canvas}{\includegraphics[width=\paperwidth]{#1}}
+  \begin{frame} 
+  \end{frame}
+}
+
+\begin{document}
+
+\preview{title}
+\preview{bobble}
+\preview{honey}
+\preview{baaaaa}
+\preview{lochness}
+\preview{venice}
+\preview{hug-the-world}
+\preview{art}
+\preview{bees}
+\preview{downunder}
+\preview{tikzlings-meeting}
+\preview{xcoffins}
+\preview{queen}
+\preview{vampires}
+\preview{finale}
+
+
+\end{document}

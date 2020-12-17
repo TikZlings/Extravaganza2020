@@ -39,7 +39,7 @@ convert2video(){
 # Params:
 # 1: jobname
 # 2: path and name to the pdf file
-# 3: number of repetitions [default 50]
+# 3: number of repetitions [default 75]
 repeatconvert(){
 
     # compiling
@@ -79,7 +79,7 @@ convert2video lochness "Amazing Ducks"
 convert2video venice "A Night in Venice"
 convert2video hug "Hug the World"
 convert2video arts "Tik\textit{Z}Art, yet again"
-convert2video bees "Two Bees \linebreak or \linebreak Not Two Bees \par \normalsize\hfill \makebox[2.8cm][l]{Thanks to Marmot! \tikz[scale=0.3]\marmot;}"
+convert2video bees "Two Bees \linebreak or \linebreak Not Two Bees \par \normalsize\hfill \makebox[2.8cm][l]{Thanks\enspace to\enspace Marmot!\enspace \tikz[scale=0.3]\marmot;}"
 convert2video downunder "Down Under"
 convert2video zoom "Modern Times"
 convert2video xcoffins "For Insiders Only"
@@ -88,5 +88,6 @@ convert2video vampire "Sinister"
 convert2video finale "Grand Finale"
 
 
-repeatconvert title "../ulrike/intermission/extravaganza-titlepage.pdf" 225
-repeatconvert credits "../ulrike/intermission/extravaganza-2020-credits.pdf" 150
+repeatconvert title "../ulrike/intermission/extravaganza-titlepage.pdf" 100
+repeatconvert credits "../ulrike/intermission/extravaganza-2020-credits.pdf" 175
+
