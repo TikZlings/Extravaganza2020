@@ -1,0 +1,26 @@
+\documentclass{beamer}
+\usepackage{xcolor}
+
+\usepackage{tikz}
+\usepackage{tikzducks,tikzlings,tikzlings-addons}
+\usepackage{../sheep-tikzling/tikzlings-sheep}
+\usetikzlibrary{shapes.callouts}
+
+\setbeamertemplate{background}
+{\includegraphics[width=\paperwidth,height=\paperheight]{James_Bond_Island_-_panoramio.jpg}}
+
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{scope}[transform canvas={yshift=-3cm,xshift = 5.5cm}]
+	\sheep[cocktail, 
+		speech={\tiny{Call me James}},
+		bubblecolour=gray!30!white];
+\end{scope}
+\end{tikzpicture}
+
+\end{document}
