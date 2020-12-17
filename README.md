@@ -16,6 +16,16 @@ The full video is available from https://vimeo.com/xxxxxxxxx
 
 - Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
 
+## Sean Connery 
+
+<img align="right" src="./storyboard/previews/seanconnery.png" height="100">
+
+- Topic: Mouse singing, James Bond ducks before Sean Connery picture
+
+- Music: nobody does it better https://youtu.be/7__rt0hRm8s 1:20-1:33
+
+- Source Code [./ulrike/seanconnery/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/seanconnery)
+
 ## Bär necessity 
 
 <img align="right" src="./storyboard/previews/honey.png" height="100">
@@ -145,3 +155,9 @@ The full video is available from https://vimeo.com/xxxxxxxxx
 - Music: we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
 
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
+
+# Work in Progress
+
+## 007
+
+Music: golden gun https://youtu.be/lEfwQ-S3sdk 0:23-037
