@@ -116,6 +116,16 @@ The full video is available from https://vimeo.com/xxxxxxxxx
 
 - Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
 
+## 007
+
+<img align="right" src="./storyboard/previews/007.png" height="100">
+
+- Topic: 007
+
+- Music: golden gun https://youtu.be/lEfwQ-S3sdk 0:23-037
+
+- Source code: [./plergux/007/](https://github.com/samcarter/Extravaganza2020/tree/master/plergux/007)
+
 ## xcoffins
 
 <img align="right" src="./storyboard/previews/xcoffins.png" height="100">
@@ -156,8 +166,5 @@ The full video is available from https://vimeo.com/xxxxxxxxx
 
 - Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
 
-# Work in Progress
 
-## 007
 
-Music: golden gun https://youtu.be/lEfwQ-S3sdk 0:23-037
