@@ -2,7 +2,7 @@
 
 This repository contains the souce code of the Great TikZlings Extravanganza 2020, created by [Ulrike](https://github.com/u-fischer) & [Gert Fischer](https://github.com/g-fischer), [Paulo Cereda](https://github.com/cereda), [Plergux](https://github.com/Plergux) and [samcarter](https://github.com/samcarter).
 
-The full video is available from https://vimeo.com/xxxxxxxxx
+The full video is available from https://vimeo.com/492532561
 
 <a href="https://vimeo.com/xxxxxxxxx"><img src="./storyboard/previews/title.png" height="300"></a>
 
