@@ -26,6 +26,8 @@ cp ../intermissions/downunder.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
 cp ../ulrike/downunder/downunder.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 cp ../intermissions/zoom.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 cp ../paulo/zoom-meeting/tikzlings-meeting.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
+cp ../intermissions/007.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
+cp ../plergux/007/007.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
 cp ../intermissions/xcoffins.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 cp ../paulo/xcoffins/xcoffins.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
 cp ../intermissions/queen.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
@@ -37,7 +39,7 @@ cp ../ulrike/finale/finale.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;
 cp ../intermissions/credits.mp4 $COUNTER.mp4 ; COUNTER=$((COUNTER+1)) ;  
 
 
-for number in {1..31}
+for number in {1..33}
 do
 rm "$number".avi
 ffmpeg -i "$number".mp4 "$number".avi
