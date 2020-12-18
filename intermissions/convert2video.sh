@@ -73,6 +73,7 @@ repeatconvert(){
 
 # Converting
 convert2video bobbles "Christmas Outing"
+convert2video connery "Sir Sean Connery \linebreak (1930--2020)"
 convert2video bear "Bär Necessity"
 convert2video baaa "Language Lesson"
 convert2video lochness "Amazing Ducks"
@@ -82,6 +83,7 @@ convert2video arts "Tik\textit{Z}Art, yet again"
 convert2video bees "Two Bees \linebreak or \linebreak Not Two Bees \par \normalsize\hfill \makebox[2.8cm][l]{Thanks\enspace to\enspace Marmot!\enspace \tikz[scale=0.3]\marmot;}"
 convert2video downunder "Down Under"
 convert2video zoom "Modern Times"
+convert2video 007 "Tribute to 007"
 convert2video xcoffins "For Insiders Only"
 convert2video queen "The Magic Flute"
 convert2video vampire "Sinister"

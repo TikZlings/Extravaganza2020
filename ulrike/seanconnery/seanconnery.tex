@@ -3,6 +3,12 @@
 % arara: pdflatex
 % xarara: convert: {density: 160, otheroptions: -dispose previous -delay 10 -loop 0, format: gif}
 %magick -density 160 -delay 60 -loop 0 goodbye.pdf goodbye.gif
+
+% delay 60 => 100/60 FPS
+% Needed: 25 FPS
+% => increase number of pages by 25/(100/60) = 15
+% => show each page 15 times
+
 \PassOptionsToPackage{x11names}{xcolor}
 
 \documentclass{beamer}

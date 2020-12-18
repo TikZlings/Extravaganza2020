@@ -1,0 +1,20 @@
+\documentclass{beamer}
+
+\setbeamertemplate{navigations symbols}{}
+\usepackage{pgffor,tikz}
+
+\begin{document}
+
+%\foreach \x in {1,...,3}{
+  \foreach \x in {1,...,60}{
+    \foreach \y in {1,...,15}{
+      \begin{frame}
+        \begin{tikzpicture}[remember picture, overlay]
+          \node at (current page.center) {\includegraphics[width=\paperwidth,page=\x]{seanconnery}};
+        \end{tikzpicture}
+      \end{frame}
+    }
+  }
+%}
+
+\end{document}
