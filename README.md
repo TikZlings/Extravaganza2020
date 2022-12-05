@@ -14,7 +14,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: https://youtu.be/12gsCREkIn0  Tannenbaum 0:55 - 1:15
 
-- Source Code: [./ulrike/bobble/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/bobble)
+- Source Code: [./ulrike/bobble/](https://github.com/TikZlings/Extravaganza2020/tree/main/ulrike/bobble)
 
 ## Sean Connery 
 
@@ -24,7 +24,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: nobody does it better https://youtu.be/7__rt0hRm8s 1:20-1:33
 
-- Source Code [./ulrike/seanconnery/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/seanconnery)
+- Source Code [./ulrike/seanconnery/](https://github.com/TikZlings/Extravaganza2020/tree/main/ulrike/seanconnery)
 
 ## Bär necessity 
 
@@ -34,7 +34,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: Abba Honey, honey 0:08 - 0:20 https://youtu.be/V0hCIjKV_Qg 
 
-- Source code: [./ulrike/honey/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/honey)
+- Source code: [./ulrike/honey/](https://github.com/TikZlings/Extravaganza2020/tree/main/ulrike/honey)
 
 ## Baaaaa
 
@@ -44,7 +44,7 @@ The full video is available from https://vimeo.com/492532561
 
 - "Music": https://www.youtube.com/watch?v=D5bjo4rMOAU
 
-- Source Code: [./samcarter/baaaaa/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/baaaaa)
+- Source Code: [./samcarter/baaaaa/](https://github.com/TikZlings/Extravaganza2020/tree/main/samcarter/baaaaa)
 
 ## Amazing ducks
 
@@ -54,7 +54,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: amazing grace https://youtu.be/M8AeV8Jbx6M 0:58-1:23
 
-- Source Code: [./samcarter/lochness/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/lochness)
+- Source Code: [./samcarter/lochness/](https://github.com/TikZlings/Extravaganza2020/tree/main/samcarter/lochness)
 
 ## A night in venice
 
@@ -64,7 +64,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: Les Contes d'Hoffmann: Barcarole 1:04 - 1:32 https://www.youtube.com/watch?v=KEiZ-J97O5A
 
-- Source code: [./samcarter/venice/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/venice)
+- Source code: [./samcarter/venice/](https://github.com/TikZlings/Extravaganza2020/tree/main/samcarter/venice)
 
 ## Hug the world 
 
@@ -74,7 +74,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: https://www.youtube.com/watch?v=IUOVqNY64To
 
-- Source Code: [./paulo/hug-the-world/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/hug-the-world)
+- Source Code: [./paulo/hug-the-world/](https://github.com/TikZlings/Extravaganza2020/tree/main/paulo/hug-the-world)
 
 ## TikZArt
 
@@ -84,7 +84,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: https://www.youtube.com/watch?v=uJ2e7jSutrA (better suggestions are welcome - I'm really not the music expert....)
 
-- Source code: [./samcarter/art/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/art)
+- Source code: [./samcarter/art/](https://github.com/TikZlings/Extravaganza2020/tree/main/samcarter/art)
 
 ## Two bees 
 
@@ -94,7 +94,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: Hamlet monologue: https://youtu.be/Rzf3ArC0afc 0:00 - 0:23
 
-- Source Code: [./samcarter/bees/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/bess)
+- Source Code: [./samcarter/bees/](https://github.com/TikZlings/Extravaganza2020/tree/main/samcarter/bess)
 
 ## Down under
 
@@ -104,7 +104,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: Slim Dusty - Waltzing Matilda https://youtu.be/FqtttbbYfSM 1:04 - 1:20
 
-- Source Code: [./ulrike/downunder](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/downunder)
+- Source Code: [./ulrike/downunder](https://github.com/TikZlings/Extravaganza2020/tree/main/ulrike/downunder)
 
 ## Zoom Meeting
 
@@ -114,7 +114,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: https://www.youtube.com/watch?v=_m47nceKkx4 (previous soundtrack was removed by YT)
 
-- Source code: [./paulo/zoom-meeting/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/zoom-meeting)
+- Source code: [./paulo/zoom-meeting/](https://github.com/TikZlings/Extravaganza2020/tree/main/paulo/zoom-meeting)
 
 ## 007
 
@@ -124,7 +124,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: golden gun https://youtu.be/lEfwQ-S3sdk 0:23-037
 
-- Source code: [./plergux/007/](https://github.com/samcarter/Extravaganza2020/tree/master/plergux/007)
+- Source code: [./plergux/007/](https://github.com/TikZlings/Extravaganza2020/tree/main/plergux/007)
 
 ## xcoffins
 
@@ -134,7 +134,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: Astronomia https://www.youtube.com/watch?v=iLBBRuVDOo4
 
-- Source Code: [./paulo/xcoffins/](https://github.com/samcarter/Extravaganza2020/tree/master/paulo/xcoffins)
+- Source Code: [./paulo/xcoffins/](https://github.com/TikZlings/Extravaganza2020/tree/main/paulo/xcoffins)
 
 ## Queen of the Night
 
@@ -144,7 +144,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: The Magic Flute – Queen of the Night https://youtu.be/xpI4uxcfY-4 0.57 - 1.15"
 
-- Source Code: [./ulrike/queen](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/queen)
+- Source Code: [./ulrike/queen](https://github.com/TikZlings/Extravaganza2020/tree/main/ulrike/queen)
 
 ## Dance of the Vampires
 
@@ -154,7 +154,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: https://www.youtube.com/watch?v=qrVTNmimDp0
 
-- Source Code: [./samcarter/vampires/](https://github.com/samcarter/Extravaganza2020/tree/master/samcarter/vampires)
+- Source Code: [./samcarter/vampires/](https://github.com/TikZlings/Extravaganza2020/tree/main/samcarter/vampires)
 
 ## Grand Finale
 
@@ -164,7 +164,7 @@ The full video is available from https://vimeo.com/492532561
 
 - Music: we shall overcome https://www.youtube.com/watch?v=Aor6-DkzBJ0 0:56- 1:17
 
-- Source Code: [./ulrike/finale/](https://github.com/samcarter/Extravaganza2020/tree/master/ulrike/finale)
+- Source Code: [./ulrike/finale/](https://github.com/TikZlings/Extravaganza2020/tree/main/ulrike/finale)
 
 
 
